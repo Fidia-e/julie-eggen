@@ -1,0 +1,264 @@
+@media screen and (max-width:1199px){
+
+    .main__email {
+        width: 85%;
+        background-color: $c-dark-blue;
+        border-radius: 20px;
+        padding: 2em 1em;
+        // box-shadow: 0px 0px 10px lighten($c-shadow, 50%);
+        font-family: $f-body;
+        color: $c-white;
+        font-size: 1em;
+        line-height: 1.3rem;
+        margin: 2em auto 4em auto;
+        z-index: 2;
+    
+        h1 {
+            text-transform: uppercase;
+            font-family: $f-landing-page;
+            color: $c-white;
+            font-weight: bold;
+            font-size: 1.5em;
+            text-align: center;
+        }
+    
+        .subtitle {
+            color: $c-dark-yellow;
+            font-family: $f-body;
+            font-size: 1.2em;
+            margin: 1em 0;
+            text-align: center;
+        }
+    
+        &--form {
+            display: flex;
+            flex-direction: column;
+            margin: 2em auto;
+    
+            &::placeholder {
+                color: $c-white;
+                font-family: $f-body-thin;
+            }
+    
+            h4 {
+                text-align: center;
+                color: $c-white;
+                margin-bottom: 0.5em;
+            }
+    
+            input {
+                background-color: transparent;
+                border: 2px solid $c-black-lighten;
+                width: 75%;
+                margin: 0.5em auto;
+                padding: 0.5em 1em;
+                border-radius: 20px;
+                display: flex;
+                font-family: $f-body-thin;
+                color: $c-white;
+                font-size: 1em;
+    
+                &:hover {
+                    border: 2px solid $c-light-yellow;
+                }
+            }
+    
+            .message {
+                width: 75%;
+                height: 20em;
+                margin: auto;
+                margin-top: 0.5em;
+                background-color: transparent;
+                border-radius: 20px;
+                resize: none;
+                font-family: $f-body-thin;
+                border: 2px solid $c-black-lighten;
+                color: $c-white;
+                padding: 0.8em;
+                font-size: 1em;
+                outline: none;
+                
+                &:hover {
+                    border: 2px solid $c-light-yellow;
+                }
+            }
+    
+            p {
+                margin: 2em 0em 0em 2em;
+            }
+    
+            .form-button {
+                width: 10rem;
+                padding: 1rem;
+                margin-top: 1em;
+                display: flex;
+                justify-content: space-around;
+                border-radius: 50px;
+                border: solid $c-dark-yellow 2px;
+                background: transparent;
+                align-self: flex-end;
+    
+                &:hover {
+                    border: solid $c-light-yellow 2px;
+                    cursor: pointer;
+                }
+    
+                h4 {
+                    font-size: 0.7rem;
+                    font-family: $f-landing-page;
+                    color: $c-light-yellow;
+                    text-transform: uppercase;
+                    margin: auto;
+                }
+    
+                i {
+                    font-size: 0.7rem;
+                    color: $c-light-yellow;
+                    margin: auto;
+                }
+            }
+    
+            .consigne {
+                font-family: $f-body-thin;
+                font-size: 0.8em;
+                font-style: italic;
+                margin: 1em auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px){
+    
+    .main__email {
+        width: 45%;
+        background-color: $c-dark-blue;
+        border-radius: 20px;
+        padding: 4em;
+        box-shadow: 15px 15px 100px $c-shadow;
+        font-family: $f-body;
+        color: $c-white;
+        font-size: 1.2em;
+        line-height: 1.5rem;
+        margin: 6em auto;
+        padding: 3em;
+        z-index: 2;
+    
+        h1 {
+            text-transform: uppercase;
+            font-family: $f-landing-page;
+            color: $c-white;
+            font-weight: bold;
+            font-size: 2.5em;
+            text-align: center;
+        }
+    
+        .subtitle {
+            color: $c-dark-yellow;
+            font-family: $f-body;
+            font-size: 1.2em;
+            margin: 1em 0;
+            text-align: center;
+        }
+    
+        &--form {
+            display: flex;
+            flex-direction: column;
+            margin: 2em auto;
+    
+            &::placeholder {
+                color: $c-white;
+                font-family: $f-body-thin;
+            }
+    
+            h4 {
+                text-align: center;
+                color: $c-white;
+                margin-bottom: 0.5em;
+            }
+    
+            input {
+                background-color: transparent;
+                border: 2px solid $c-black-lighten;
+                width: 75%;
+                margin: 0.5em auto;
+                padding: 0.5em 1em;
+                border-radius: 20px;
+                display: flex;
+                font-family: $f-body-thin;
+                color: $c-white;
+                font-size: 1em;
+    
+                &:hover {
+                    border: 2px solid $c-light-yellow;
+                }
+            }
+    
+            .message {
+                width: 75%;
+                height: 20em;
+                margin: auto;
+                margin-top: 0.5em;
+                background-color: transparent;
+                border-radius: 20px;
+                resize: none;
+                font-family: $f-body-thin;
+                border: 2px solid $c-black-lighten;
+                color: $c-white;
+                padding: 0.8em;
+                font-size: 1em;
+                outline: none;
+                
+                &:hover {
+                    border: 2px solid $c-light-yellow;
+                }
+            }
+    
+            p {
+                margin: 2em 0em 0em 5em;
+            }
+    
+            .form-button {
+                width: 15rem;
+                padding: 1rem;
+                margin-top: 1em;
+                display: flex;
+                justify-content: space-around;
+                border-radius: 50px;
+                border: solid $c-dark-yellow 2px;
+                background: transparent;
+                align-self: flex-end;
+    
+                &:hover {
+                    border: solid $c-light-yellow 2px;
+                    cursor: pointer;
+    
+                    i {
+                        animation: 1s ease-in-out 0s infinite running slidein;
+                    }
+                }
+    
+                h4 {
+                    font-size: 1rem;
+                    font-family: $f-landing-page;
+                    color: $c-light-yellow;
+                    text-transform: uppercase;
+                    margin: auto;
+                }
+    
+                i {
+                    font-size: 1.5rem;
+                    color: $c-light-yellow;
+                    margin: auto;
+                }
+            }
+    
+            .consigne {
+                font-family: $f-body-thin;
+                font-size: 0.8em;
+                font-style: italic;
+                float: right;
+            }
+        }
+    }
+}

@@ -1,0 +1,348 @@
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Mobile ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include small {
+
+    .header-dark {
+        background-color: $c-dark-blue;
+    }
+
+    .header-light {
+        background-color: $c-white;
+    }
+
+    .header {
+        grid-row-start: 1;
+        display: flex;
+        flex-direction: column;
+        // width: 100%;
+        text-align: center;
+        position: fixed;
+        z-index: 20;
+
+        .menu-burger-button {
+            display: flex;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: $c-dark-blue;
+            position: absolute;
+            text-decoration: none;
+            top: 0.3em;
+            right: .7em;
+        }
+
+        &__logo {
+            display: flex;
+            width: 50%;
+    
+            &--logo {
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
+    
+                img {
+                    width: 20%;
+                }
+    
+                h1 {
+                    border: none;
+                    align-self: center;
+                    text-transform: uppercase;
+                    font-family: $f-landing-page;
+                    color: $c-dark-blue;
+                    font-weight: bold;
+                    font-size: 1em;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+
+        .social {
+            display: none;
+        }
+
+        .navigation {
+            display: none;
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:768px) and (max-width:991px){
+
+    .header {
+        h1 {
+            font-size: 2em;
+        } 
+
+        .menu-burger-button {
+            font-size: 2.5em;
+            top: .5em;
+            right: .7em;
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1024px){
+
+    .header {
+        h1 {
+            font-size: 2.2em;
+        } 
+
+        .menu-burger-button {
+            font-size: 3.5em;
+            top: .5em;
+            right: .7em;
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:1200px){
+
+    .header-dark {
+        background-color: $c-dark-blue;
+    }
+
+    .header-light {
+        background-color: $c-white;
+    }
+
+    .header {
+        grid-row-start: 1;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 20;
+    
+        &__logo {
+            display: flex;
+            width: 30%;
+    
+            &--logo {
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
+    
+                img {
+                    width: 20%;
+                }
+    
+                h1 {
+                    border: none;
+                    align-self: center;
+                    text-transform: uppercase;
+                    font-family: $f-landing-page;
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    margin-left: 0.5rem;
+                }
+
+                .title-dark-header {
+                    color: $c-white;
+                }
+
+                .title-light-header {
+                    color: $c-dark-blue;
+                }
+            }
+        }
+    
+        .burger {
+            display: none;
+        }
+    
+    /*------------------------------------------ SOCIAL -------------------------------------------------*/
+    
+    
+        &__social {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 15%;
+            position: relative;
+
+            .link-dark-header {
+                color: $c-orange-yellow;
+            }
+
+            .link-light-header {
+                color: $c-brick;
+            }
+    
+            .link-facebook{
+                margin: 0em 0.5rem;
+                font-size: 1.8em;
+            }
+    
+            .link-instagram {
+                margin: 0em 0.5rem;
+                font-size: 2em;
+            }
+    
+            .link-phone {
+                margin: 0em 0.5rem;
+                font-size: 1.8em;
+    
+    
+                &:hover .span-phone{
+                    opacity: 1;
+                    display: block;
+                }
+    
+                &:hover .phone-comment{
+                    opacity: 1;
+                    display: block;
+                }
+            }
+    
+            .link-email {
+                margin: 0em 0.5rem;
+                font-size: 2em;
+    
+                &:hover .span-email{
+                    opacity: 1;
+                    display: block;
+                }
+    
+                &:hover .email-comment{
+                    opacity: 1;
+                    display: block;
+                }
+            }
+
+            .span {                
+                display: block;
+                position: absolute;
+                bottom: -150%;
+                padding: 0 .25em;
+                color: $c-white;
+                transition: all .5s; 
+                z-index: 10;
+                display: none;
+            }
+    
+            .span-phone {
+                left: -4.5em;
+                font-size: 0.7em;
+            }
+    
+            .span-email {
+                left: 0.9em;
+                font-size: 0.6em;
+            }
+
+            .comment {
+                display: block;
+                transform: rotate(180deg);
+                z-index: 5;
+                position: absolute;
+                color: $c-dark-blue;
+                display: none;
+                text-shadow: 0px 0px 2px $c-white;
+            }
+    
+            .phone-comment {
+                top: 0.25em;
+                right: 0.5em;
+                font-size: 8em;
+            }
+    
+            .email-comment {
+                transform: rotateX(180deg);
+                top: 0.3em;
+                right: -0.1em;
+                font-size: 7em;
+            }
+        }
+    
+    /*------------------------------------------ MENU -------------------------------------------------*/
+    
+    
+        &__nav {
+            display: flex;
+            width: 80%;
+            justify-content: flex-end;
+
+            .close-menu-button {
+                display: none;
+            }
+    
+            &--links {
+                display: flex;
+                flex-direction: row;
+                align-self: center;
+                justify-content: space-between;
+    
+                .link {
+                    text-decoration: none;
+                    margin: 0em 1em;
+                    padding: 0.1em;
+                    font-family: $f-landing-page;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                    position: relative;
+                }
+
+                .link-dark-nav {
+                    color: $c-white;
+
+                    &::after {
+                        content: '';
+                        transform-origin: 0 0; 
+                        transform: scaleX(0);
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 0.1em; 
+                        background: $c-white;
+                        z-index: -1;
+                        transition: transform 0.3s;
+                    }
+    
+                      &:hover::after {
+                        transform: scaleX(1);
+                      }
+                }
+
+                .link-light-nav {
+                    color: $c-dark-blue;
+
+                    &::after {
+                        content: '';
+                        transform-origin: 0 0; 
+                        transform: scaleX(0);
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 0.1em; 
+                        background: $c-dark-blue;
+                        z-index: -1;
+                        transition: transform 0.3s;
+                    }
+    
+                      &:hover::after {
+                        transform: scaleX(1);
+                      }
+                }
+    
+                .active {
+                    color: $c-dark-yellow;
+                }
+            }
+        }
+    }
+}

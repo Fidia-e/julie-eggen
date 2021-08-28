@@ -1,0 +1,125 @@
+@media screen and (max-width:1199px){
+
+   .main__presentation--articles {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        background-color: $c-dark-blue;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: auto;
+    
+        h2 {
+            margin: auto;
+            margin-bottom: .5em;
+            text-transform: uppercase;
+            color: $c-white;
+            font-family: $f-landing-page;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: center;
+            border-bottom: solid 1px $c-dark-yellow;
+            padding-bottom: 0.5em;
+        }
+    
+        article {
+            padding: 0.5rem;
+            color: lighten($c-black, 30%);
+            font-family: $f-body-thin;
+            color: $c-white;
+            font-size: 1em;
+            line-height: 1.1rem;
+    
+            h3 {
+                color: $c-white;
+                font-family: $f-body;
+                font-size: 1.05em;
+            }
+    
+            .date {
+                font-family: $f-body-thin;
+                color: $c-semidark-yellow;
+                font-size: 0.8em;
+                margin-bottom: 0.5rem;
+            }
+        }
+    
+        .articles--more {
+            display: flex;
+            text-decoration: none;
+            color: $c-dark-yellow;
+            float: right;
+            margin-top: 0.5em;
+            font-family: $f-body;
+            font-size: 0.8em;
+            font-weight: bold;
+    
+            i{
+                margin-top: 0.3em;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:1200px){
+
+    .main__presentation--articles {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        background-color: $c-dark-blue;
+        border-radius: 20px;
+        padding: 3rem;
+        box-shadow: 15px 15px 100px $c-shadow;
+    
+        h2 {
+            margin: auto;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+            color: $c-white;
+            font-family: $f-landing-page;
+            font-weight: bold;
+            font-size: 1.3em;
+            text-align: center;
+            border-bottom: solid 1px $c-dark-yellow;
+            padding-bottom: 0.5em;
+        }
+    
+        article {
+            padding: 0.5rem;
+            color: lighten($c-black, 30%);
+            font-family: $f-body-thin;
+            color: $c-white;
+            font-size: 1.1em;
+            line-height: 1.3rem;
+    
+            h3 {
+                color: $c-white;
+                font-family: $f-body;
+            }
+    
+            .date {
+                font-family: $f-body-thin;
+                color: $c-semidark-yellow;
+                font-size: 0.8em;
+                margin-bottom: 0.5rem;
+            }
+        }
+    
+        .articles--more {
+            display: flex;
+            text-decoration: none;
+            color: $c-dark-yellow;
+            float: right;
+            margin-top: 0.5em;
+            font-family: $f-body;
+            font-size: 0.8em;
+            font-weight: bold;
+    
+            i{
+                margin-top: 0.1em;
+            }
+        }
+    }
+} 

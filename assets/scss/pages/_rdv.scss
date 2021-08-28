@@ -1,0 +1,74 @@
+
+
+.header-consult {
+    border-bottom: 1px solid $c-ocre-yellow;
+}
+
+.main-consultations {
+    grid-row-start: 2;
+    background: url("../../assets/images/fond-consultations.svg");
+    background-size: cover;
+    background-position: center;
+    height: 3500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: $c-white;
+    border-bottom: 1px solid $c-ocre-yellow;
+    ::selection {
+        background-color: $c-orange-yellow;
+        color: $c-white;
+    }
+
+    &__text {
+        font-size: 2em;
+        color: $c-black-lighten;
+        width: 40%;
+        margin: 6em 2em;
+        text-align: center;
+
+        h3 {
+            font-family: $f-landing-page;
+            color: $c-ocre-yellow;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        .bottom-line {
+            background-color: $c-dark-blue;
+            width: 30%;
+            margin-bottom: 1em;
+        }
+
+        span {
+            color: $c-ocre-yellow;
+        }
+
+        .address-span {
+            margin-top: 1em;
+            display: block;
+        }
+
+        img {
+            margin-top: 2em;
+            width: 80%;
+        }
+
+        .img-map {
+            box-shadow: 0px 0px 20px lighten($c-shadow, 50%);
+        }
+
+        .img-agenda {
+            width: 40%;
+        }
+    }
+
+    .main-consultations__text--agenda {
+        align-self: flex-end;
+    }
+}
