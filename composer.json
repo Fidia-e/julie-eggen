@@ -6,6 +6,9 @@
             "email": "elbouanani.f@gmail.com"
         }
     ],
+    "extra": {
+        "wordpress-install-dir": "wp"
+    },
     "require": {
         "johnpbloch/wordpress": "^5.8"
     }

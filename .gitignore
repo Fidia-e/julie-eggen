@@ -1,5 +1,7 @@
 .cache
 dist
 node_modules
-/vendor
-/wp
+vendor
+wp
+/wp-config.php
+/wp-content
