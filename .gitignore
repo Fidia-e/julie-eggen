@@ -5,3 +5,4 @@ vendor
 wp
 /wp-config.php
 /wp-content
+/install.md
