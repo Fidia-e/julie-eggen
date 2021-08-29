@@ -6,7 +6,6 @@
 
     .header-dark {
         background-color: $c-dark-blue;
-        
     }
 
     .header-light {
@@ -17,7 +16,6 @@
         grid-row-start: 1;
         display: flex;
         flex-direction: column;
-        // width: 100%;
         text-align: center;
         position: fixed;
         z-index: 20;
