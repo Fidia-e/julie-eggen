@@ -198,7 +198,6 @@
             flex-direction: column;
             margin: 0em auto 2em auto;
             padding-bottom: 1em;
-            // overflow: hidden;
             text-align: justify;
             z-index: 2;
 
@@ -256,7 +255,7 @@
                         border-radius: 20px;
                         color: $c-black-lighten;
                         line-height: 1.3rem;
-                        margin: 1em 0.5em;
+                        margin: 1em .6rem;
 
                         .testimonial--author {
                             align-self: center;

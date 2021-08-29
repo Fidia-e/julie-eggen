@@ -21,7 +21,6 @@ const appCarousel = {
 
     // afficher une slide spécifique
     handleSpecificSlide: function(event) {
-        console.log('clic sur le bouton');
 
         // déterminer et cibler le bouton le cliqué
         const clickedButton = event.currentTarget;
@@ -52,7 +51,7 @@ const appCarousel = {
         }
 
         // on crée un nouveau timer de défilement auto
-        appCarousel.autoScrollTimer = setInterval(appCarousel.displayNextSlide, 3000);
+        appCarousel.autoScrollTimer = setInterval(appCarousel.displayNextSlide, 5000);
     },
 
 
@@ -73,7 +72,7 @@ const appCarousel = {
 
         // récupérer la largeur du conteneur
         const containerWidth = containerElement.offsetWidth;
-
+        
         // calcul de la distance de scroll à appliquer
         const offsetX = containerWidth * targetSlideNumber;
 

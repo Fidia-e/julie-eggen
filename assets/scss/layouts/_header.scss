@@ -6,6 +6,7 @@
 
     .header-dark {
         background-color: $c-dark-blue;
+        
     }
 
     .header-light {
@@ -23,7 +24,6 @@
 
         .menu-burger-button {
             display: flex;
-            cursor: pointer;
             font-size: 1.5em;
             color: $c-dark-blue;
             position: absolute;
