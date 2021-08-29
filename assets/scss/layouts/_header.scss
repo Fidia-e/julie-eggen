@@ -1,20 +1,29 @@
+.header-dark {
+    background-color: $c-dark-blue;
+}
+
+.header-light {
+    background-color: $c-white;
+}
+
+.title-dark-header {
+    color: $c-white;
+}
+
+.title-light-header {
+    color: $c-dark-blue;
+}
+
 /*----------------------------------------------------------------------------------------------------------
  ---------------------------------------------- Mobile ----------------------------------------------------
  ----------------------------------------------------------------------------------------------------------*/
 
 @include small {
 
-    .header-dark {
-        background-color: $c-dark-blue;
-    }
-
-    .header-light {
-        background-color: $c-white;
-    }
-
     .header {
         grid-row-start: 1;
         display: flex;
+        max-width: 100%;
         flex-direction: column;
         text-align: center;
         position: fixed;
@@ -28,6 +37,10 @@
             text-decoration: none;
             top: 0.3em;
             right: .7em;
+        }
+
+        .burger-light {
+            color: $c-white;
         }
 
         &__logo {
@@ -52,6 +65,10 @@
                     font-weight: bold;
                     font-size: 1em;
                     margin-left: 0.5rem;
+                }
+
+                .title-dark-header {
+                    color: $c-white;
                 }
             }
         }
@@ -106,14 +123,6 @@
 
 @media screen and (min-width:1200px){
 
-    .header-dark {
-        background-color: $c-dark-blue;
-    }
-
-    .header-light {
-        background-color: $c-white;
-    }
-
     .header {
         grid-row-start: 1;
         display: flex;
@@ -146,13 +155,6 @@
                     margin-left: 0.5rem;
                 }
 
-                .title-dark-header {
-                    color: $c-white;
-                }
-
-                .title-light-header {
-                    color: $c-dark-blue;
-                }
             }
         }
     

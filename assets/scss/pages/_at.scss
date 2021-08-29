@@ -1,42 +1,87 @@
+@include small {
 
-.main-at {
-    grid-row-start: 2;
-    margin: 6em auto 0em auto;
-    padding-bottom: 6em;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    background-color: $c-white;
-    text-align: center;
-    ::selection {
-        background-color: $c-orange-yellow;
-        color: $c-white;
-    }
-
-
-    &__elements {
-
-        h2 {
-            font-family: $f-landing-page;
-            text-transform: uppercase;
-            font-size: 3em;
-            color: $c-dark-yellow;
-            margin: 2em auto;
+    .main-at {
+        grid-row-start: 2;
+        margin: 2em auto 0em auto;
+        padding-bottom: 6em;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: $c-white;
+        text-align: center;
+        ::selection {
+            background-color: $c-orange-yellow;
+            color: $c-white;
         }
-
-        img {
-            width: 20%;
-            margin: 1em auto 4em auto;
-        }
-        p {
-            font-family: $f-body;
-            color: $c-black-lighten;
-            font-size: 1.5em;
-            line-height: 1.8rem;
-            width: 80%;
-            margin: 2em auto;
-        }
-    }
     
+        &__elements {
+    
+            h2 {
+                font-family: $f-landing-page;
+                text-transform: uppercase;
+                font-size: 1.5em;
+                color: $c-dark-yellow;
+                margin: 2em auto;
+            }
+    
+            img {
+                width: 40%;
+                margin: 1em auto 4em auto;
+            }
+            p {
+                font-family: $f-body;
+                color: $c-black-lighten;
+                font-size: 1em;
+                line-height: 1.8rem;
+                width: 80%;
+                margin: 2em auto;
+            }
+        }
+
+    }
+}
+
+
+@include extra-large {
+
+    .main-at {
+        grid-row-start: 2;
+        margin: 6em auto 0em auto;
+        padding-bottom: 6em;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: $c-white;
+        text-align: center;
+        ::selection {
+            background-color: $c-orange-yellow;
+            color: $c-white;
+        }
+        
+        &__elements {
+            
+            h2 {
+                font-family: $f-landing-page;
+                text-transform: uppercase;
+                font-size: 3em;
+                color: $c-dark-yellow;
+                margin: 2em auto;
+            }
+            
+            img {
+                width: 20%;
+                margin: 1em auto 4em auto;
+            }
+            p {
+                font-family: $f-body;
+                color: $c-black-lighten;
+                font-size: 1.5em;
+                line-height: 1.8rem;
+                width: 80%;
+                margin: 2em auto;
+            }
+        }
+    }
 }
