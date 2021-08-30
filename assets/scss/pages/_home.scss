@@ -297,13 +297,13 @@
                 margin: auto;
 
                     .number {
-                        width: 100%;
+                        width: 15%;
                         height: 1em;
                         cursor: pointer;
                         background-color: transparent;
                         border-radius: 20px;
                         border: solid 0.2em $c-brick;
-                        margin: 0 2em;
+                        margin: 0 .5em;
                         transition: all 0.5s;
 
                         &.active {
@@ -420,6 +420,15 @@
                         }
                     }
             }
+
+            &--numbers {
+
+                .number {
+
+                    width: 10%;
+                    margin: 0 1em;
+                }
+            }
         }
     }
 }
@@ -496,11 +505,11 @@
             &--title {
 
                 h1 {
-                    font-size: 2em;
+                    font-size: 3em;
                 }
 
                 .subtitle {
-                    font-size: 1.5em;
+                    font-size: 1.8em;
                 }
             }
 
