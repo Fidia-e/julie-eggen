@@ -1,0 +1,363 @@
+.footer-dark {
+    background-color: $c-dark-blue;
+}
+
+.footer-light {
+    background-color: $c-white;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Mobile ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include small {
+
+    .footer {
+        grid-row-start: 3;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 0em;
+        font-family: $f-landing-page;
+    
+        &__social {
+            display: flex;  
+
+            .title {
+                font-size: 1em;
+                margin: auto;
+            }
+    
+            .title-light-footer {
+                color: $c-brick;
+            }
+
+            .title-dark-footer {
+                color: $c-orange-yellow;
+            }
+
+            .fa-arrow-right {
+                font-size: 1em;
+                margin: 0.2em 0.5em 0em 1em;
+            }
+    
+            .light-footer-fafa {
+                color: $c-brick;
+            }
+
+            .dark-footer-fafa {
+                color: $c-orange-yellow;
+            }
+
+            .link {
+                font-size: 1.2em;
+                align-self: center;
+                margin: 0em 0.2rem;
+            }
+            
+            .link-light-footer {
+                color: $c-brick;
+            }
+
+            .link-dark-footer {
+                color: $c-orange-yellow;
+            }
+        }
+
+        .copyright {
+            font-family: $f-body;
+            font-size: 1em;
+        }
+    
+        .copyright-light-footer {
+            color: $c-dark-yellow;
+        }
+
+        .copyright-dark-footer {
+            color: $c-ocre-yellow;
+        }
+
+        .legal {
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 0.5em;
+            font-size: 1em;
+        }
+    
+        .legal-light-footer {
+            color: $c-dark-blue;
+        }
+
+        .legal-dark-footer {
+            color: $c-white;
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ---------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+ @include medium {
+
+    .footer {
+        grid-row-start: 3;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3em 0em;
+        font-family: $f-landing-page;
+    
+        &__social {
+            display: flex;  
+
+            .title {
+                font-size: 1.5em;
+                margin: auto;
+            }
+    
+            .title-light-footer {
+                color: $c-brick;
+            }
+
+            .title-dark-footer {
+                color: $c-orange-yellow;
+            }
+
+            .fa-arrow-right {
+                font-size: 1.5em;
+                margin: 0.1em 0.5em 0em 1em;
+            }
+    
+            .light-footer-fafa {
+                color: $c-brick;
+            }
+
+            .dark-footer-fafa {
+                color: $c-orange-yellow;
+            }
+
+            .link {
+                font-size: 1.5em;
+                align-self: center;
+                margin: 0em 0.5rem;
+            }
+            
+            .link-light-footer {
+                color: $c-brick;
+            }
+
+            .link-dark-footer {
+                color: $c-orange-yellow;
+            }
+        }
+
+        .copyright {
+            font-family: $f-body;
+            font-size: 1.5em;
+        }
+    
+        .copyright-light-footer {
+            color: $c-dark-yellow;
+        }
+
+        .copyright-dark-footer {
+            color: $c-ocre-yellow;
+        }
+
+        .legal {
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 0.5em;
+            font-size: 1.5em;
+        }
+    
+        .legal-light-footer {
+            color: $c-dark-blue;
+        }
+
+        .legal-dark-footer {
+            color: $c-white;
+        }
+    }
+ }
+
+ @include large {
+    .footer {
+        grid-row-start: 3;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4em 0em;
+        font-family: $f-landing-page;
+    
+        &__social {
+            display: flex;  
+
+            .title {
+                font-size: 2em;
+                margin: auto;
+            }
+    
+            .title-light-footer {
+                color: $c-brick;
+            }
+
+            .title-dark-footer {
+                color: $c-orange-yellow;
+            }
+
+            .fa-arrow-right {
+                font-size: 2em;
+                margin: 0.1em 0.5em 0em 1em;
+            }
+    
+            .light-footer-fafa {
+                color: $c-brick;
+            }
+
+            .dark-footer-fafa {
+                color: $c-orange-yellow;
+            }
+
+            .link {
+                font-size: 2em;
+                align-self: center;
+                margin: 0em 0.5rem;
+            }
+            
+            .link-light-footer {
+                color: $c-brick;
+            }
+
+            .link-dark-footer {
+                color: $c-orange-yellow;
+            }
+        }
+
+        .copyright {
+            font-family: $f-body;
+            font-size: 2em;
+        }
+    
+        .copyright-light-footer {
+            color: $c-dark-yellow;
+        }
+
+        .copyright-dark-footer {
+            color: $c-ocre-yellow;
+        }
+
+        .legal {
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 0.5em;
+            font-size: 2em;
+        }
+    
+        .legal-light-footer {
+            color: $c-dark-blue;
+        }
+
+        .legal-dark-footer {
+            color: $c-white;
+        }
+    }
+ }
+
+
+ /*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include extra-large {
+
+    .footer {
+        grid-row-start: 3;
+        display: flex;
+        flex-direction: raw;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 7em;
+        font-family: $f-landing-page;
+    
+        &__social {
+            display: flex;  
+
+            .title {
+                font-size: 1.5em;
+                margin: auto;
+            }
+    
+            .title-light-footer {
+                color: $c-brick;
+            }
+
+            .title-dark-footer {
+                color: $c-orange-yellow;
+            }
+
+            .fa-arrow-right {
+                font-size: 1.5em;
+                margin: .2em 0.5em 0em 1em;
+            }
+    
+            .light-footer-fafa {
+                color: $c-brick;
+            }
+
+            .dark-footer-fafa {
+                color: $c-orange-yellow;
+            }
+
+            .link {
+                font-size: 2em;
+                align-self: center;
+                margin: 0em 0.5rem;
+            }
+            
+            .link-light-footer {
+                color: $c-brick;
+            }
+
+            .link-dark-footer {
+                color: $c-orange-yellow;
+            }
+        }
+
+        .copyright {
+            font-family: $f-body;
+            font-size: 1.5em;
+        }
+    
+        .copyright-light-footer {
+            color: $c-dark-yellow;
+        }
+
+        .copyright-dark-footer {
+            color: $c-ocre-yellow;
+        }
+
+        .legal {
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 0.5em;
+            font-size: 1.5em;
+        }
+    
+        .legal-light-footer {
+            color: $c-dark-blue;
+        }
+
+        .legal-dark-footer {
+            color: $c-white;
+        }
+    }
+}

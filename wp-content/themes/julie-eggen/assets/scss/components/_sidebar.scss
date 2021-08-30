@@ -1,0 +1,202 @@
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Mobile ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include small {
+
+    .main__presentation--articles {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        background-color: $c-dark-blue;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: auto;
+    
+        h2 {
+            margin: auto;
+            margin-bottom: .5em;
+            text-transform: uppercase;
+            color: $c-white;
+            font-family: $f-landing-page;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: center;
+            border-bottom: solid 1px $c-dark-yellow;
+            padding-bottom: 0.5em;
+        }
+    
+        article {
+            padding: 0.5rem;
+            color: lighten($c-black, 30%);
+            font-family: $f-body-thin;
+            color: $c-white;
+            font-size: 1em;
+            line-height: 1.1rem;
+    
+            h3 {
+                color: $c-white;
+                font-family: $f-body;
+                font-size: 1.05em;
+            }
+    
+            .date {
+                font-family: $f-body-thin;
+                color: $c-semidark-yellow;
+                font-size: 0.8em;
+                margin-bottom: 0.5rem;
+            }
+        }
+    
+        .articles--more {
+            display: flex;
+            text-decoration: none;
+            color: $c-dark-yellow;
+            float: right;
+            margin-top: 0.5em;
+            font-family: $f-body;
+            font-size: 0.8em;
+            font-weight: bold;
+    
+            i{
+                margin-top: 0.3em;
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+ @include medium {
+
+    .main__presentation--articles {
+    
+        h2 {
+            font-size: 1.5em;
+            border-bottom: solid 2px $c-dark-yellow;
+        }
+    
+        article {
+            font-size: 1.2em;
+            line-height: 1.5rem;
+    
+            h3 {
+                font-size: 1.2em;
+            }
+    
+            .date {
+                font-size: 1em;
+            }
+        }
+    
+        .articles--more {
+            font-size: 1em;
+    
+            i{
+                margin-top: 0.2em;
+            }
+        }
+    }
+ }
+
+ @include large {
+
+    .main__presentation--articles {
+    
+        h2 {
+            margin-top: .5em;
+            font-size: 2em;
+            border-bottom: solid 2px $c-dark-yellow;
+        }
+    
+        article {
+            font-size: 1.4em;
+            line-height: 2rem;
+    
+            h3 {
+                font-size: 1.5em;
+            }
+    
+            .date {
+                font-size: 1.2em;
+            }
+        }
+    
+        .articles--more {
+            font-size: 1.1em;
+    
+            i{
+                margin-top: 0.2em;
+            }
+        }
+    }
+ }
+
+
+ /*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include extra-large {
+
+    .main__presentation--articles {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        background-color: $c-dark-blue;
+        border-radius: 20px;
+        padding: 3rem;
+        box-shadow: 15px 15px 100px $c-shadow;
+    
+        h2 {
+            margin: auto;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+            color: $c-white;
+            font-family: $f-landing-page;
+            font-weight: bold;
+            font-size: 1.3em;
+            text-align: center;
+            border-bottom: solid 1px $c-dark-yellow;
+            padding-bottom: 0.5em;
+        }
+    
+        article {
+            padding: 0.5rem;
+            color: lighten($c-black, 30%);
+            font-family: $f-body-thin;
+            color: $c-white;
+            font-size: 1.1em;
+            line-height: 1.3rem;
+    
+            h3 {
+                color: $c-white;
+                font-family: $f-body;
+            }
+    
+            .date {
+                font-family: $f-body-thin;
+                color: $c-semidark-yellow;
+                font-size: 0.8em;
+                margin-bottom: 0.5rem;
+            }
+        }
+    
+        .articles--more {
+            display: flex;
+            text-decoration: none;
+            color: $c-dark-yellow;
+            float: right;
+            margin-top: 0.5em;
+            font-family: $f-body;
+            font-size: 0.8em;
+            font-weight: bold;
+    
+            i{
+                margin-top: 0.1em;
+            }
+        }
+    }
+}

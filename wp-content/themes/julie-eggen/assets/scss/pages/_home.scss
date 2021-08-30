@@ -1,0 +1,826 @@
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Mobile ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+ @include small {
+
+    .main {
+        grid-row-start: 2;
+        background: url("../../assets/images/fond-home.svg");
+        background-size: cover;
+        width: 100%;
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        ::selection {
+            background-color: $c-orange-yellow;
+            color: $c-white;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $c-white;
+            opacity: 0.7;
+            z-index: 0;
+        }
+     
+        &__presentation {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 2em auto 0em auto;
+            z-index: 2;
+    
+        /*---------------------------------------- PROFIL -----------------------------------------------*/
+
+            &--profil {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: $c-white;
+                border-radius: 20px;
+                padding: 2em;
+                margin-top: 2em;
+        
+                &--picture {
+                    width: 70%;
+        
+                    img {
+                        width: 90%;
+                        margin: 2em 0em;
+                        align-self: center;
+                        border: solid 0.7em $c-white;
+                        border-bottom: solid 2em $c-white;
+                        box-shadow: 0px 0px 20px lighten($c-shadow, 40%);
+                        transform: rotate(5deg);
+                    }
+                }
+        
+                &--description {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    font-family: $f-body;
+                    color: $c-black-lighten;
+                    text-align: justify;
+                    font-size: 1em;
+                    line-height: 1.3rem;
+        
+                    h1 {
+                        text-transform: uppercase;
+                        font-family: $f-landing-page;
+                        color: $c-dark-blue;
+                        font-weight: bold;
+                        font-size: 1.5em;
+                    }
+        
+                    .subtitle {
+                        color: $c-dark-yellow;
+                        font-family: $f-body-thin;
+                        font-size: 1.2em;
+                        margin-top: 1em;
+                        margin-bottom: 2rem;
+                        text-align: initial;
+                    }
+                }
+            }
+        }
+
+        /*---------------------------------------- SERVICES -----------------------------------------------*/
+
+        &__services {
+            display: flex;
+            flex-direction: column;
+            font: {
+                family: $f-body;
+                size: 1em;
+            }
+            background-color: $c-white;
+            border-radius: 20px;
+            color: $c-black-lighten;
+            line-height: 1.3rem;
+            margin: 2em auto 0em auto;
+            text-align: justify;
+            width: 90%;
+            z-index: 2;
+
+            :nth-child(n) {
+                margin: 1em 2em;
+            }
+
+            h1 {
+                font: {
+                    family: $f-landing-page;
+                    weight: bold;
+                    size: 1.5em;
+                }
+                color: $c-dark-blue;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .subtitle {
+                font: {
+                    family: $f-body;
+                    size: 1.2em;
+                }
+                color: $c-dark-yellow;
+                line-height: 1.3rem;
+                text-align: center;
+            }
+        }
+
+        /*------------------------------------- CONSULTATIONS -------------------------------------------*/
+
+        &__consultations {
+            display: flex;
+            flex-direction: column;
+            font: {
+                family: $f-body;
+                size: 1em;
+            }
+            background-color: $c-dark-yellow;
+            border-radius: 20px;
+            color: $c-white;
+            line-height: 1.3rem;
+            margin: 2em auto;
+            text-align: justify;
+            width: 90%;
+            z-index: 2;
+
+            :nth-child(n) {
+                margin: 1em 2em;
+            }
+
+            h1 {
+                font: {
+                    family: $f-landing-page;
+                    size: 1.5em;
+                }
+                text: {
+                    transform: uppercase;
+                    align: center;
+                }
+                color: $c-white;
+            }
+
+            .subtitle {
+                font: {
+                    family: $f-body;
+                    size: 1.2em;
+                }
+                color: $c-dark-blue;
+                margin: 1em 0;
+                text-align: center;
+            }
+
+            img {
+                width: 60%;
+                display: flex;
+                align-self: center;
+            }
+        }
+
+         /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
+
+        &__testimonials {
+            display: flex;
+            flex-direction: column;
+            margin: 0em auto 2em auto;
+            padding-bottom: 1em;
+            text-align: justify;
+            z-index: 2;
+
+            &--title {
+                background-color: $c-brick;
+                padding: 1em 0em 0em 0em;
+
+
+                h1 {
+                    font: {
+                        family: $f-landing-page;
+                        weight: bold;
+                        size: 1.5em;
+                    }
+                    text-transform: uppercase;
+                    color: $c-black;
+                    text-align: center;
+                }
+
+                .subtitle {
+                    color: $c-white;
+                    font: {
+                        family: $f-body;
+                        size: 1.2em;
+                    }
+                    margin: 1em 0;
+                    text-align: center;
+                }
+            }
+
+
+
+            &--content {
+                display: flex;
+                flex: {
+                    direction: row;
+                    wrap: nowrap;
+                }
+                overflow: hidden;
+                scroll-behavior: smooth;
+                margin: auto;
+
+                    &--testimonial {
+                        display: flex;
+                        flex: {
+                            direction: column;
+                            shrink: 0;
+                        }
+                        font: {
+                            family: $f-body;
+                            size: 1em;
+                        }
+                        width: 95%;
+                        background-color: $c-white;
+                        border-radius: 20px;
+                        color: $c-black-lighten;
+                        line-height: 1.3rem;
+                        margin: 1em .6rem;
+
+                        .testimonial--author {
+                            align-self: center;
+                            width: 90%;
+
+                            h4 {
+                                font-family: $f-body-medium;
+                                color: $c-ocre-yellow;
+                                font-size: 1em;
+                                align-self: flex-start;
+                                margin: 1em .5em;
+    
+                                span {
+                                    font: {
+                                        family: $f-body-thin;
+                                        size: 0.8em;
+                                    }
+                                    color: $c-dark-blue;
+                                }
+                            }
+                        }
+
+                        .txt {
+                            max-width: 85%;
+                            align-self: center;
+                            margin-bottom: 1em;
+                        }
+                    }
+            }
+
+            &--numbers {
+                display: flex;
+                flex: {
+                    direction: row;
+                    wrap: nowrap;
+                }
+                justify-content: center;
+                width: 100%;
+                margin: auto;
+
+                    .number {
+                        width: 15%;
+                        height: 1em;
+                        cursor: pointer;
+                        background-color: transparent;
+                        border-radius: 20px;
+                        border: solid 0.2em $c-brick;
+                        margin: 0 .5em;
+                        transition: all 0.5s;
+
+                        &.active {
+                            background-color: $c-brick;
+                        }
+                    }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include medium {
+    .main {
+        margin-top: 4em;
+     
+        &__presentation {
+    
+        /*---------------------------------------- PROFIL -----------------------------------------------*/
+
+            &--profil {
+
+                &--picture {
+        
+                    img {
+                        border: solid 1.2em $c-white;
+                        border-bottom: solid 3em $c-white;
+                    }
+                }
+        
+                &--description {
+                    font-size: 1.5em;
+                    line-height: 1.8rem;
+        
+                    h1 {
+                        font-size: 2em;
+                        margin-top: 1em;
+                    }
+        
+                    .subtitle {
+                        font-size: 1.5em;
+                        line-height: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        /*---------------------------------------- SERVICES -----------------------------------------------*/
+
+        &__services {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+
+        /*------------------------------------- CONSULTATIONS -------------------------------------------*/
+
+        &__consultations {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+
+         /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
+
+        &__testimonials {
+
+            &--title {
+
+                h1 {
+                    font-size: 2em;
+                }
+
+                .subtitle {
+                    font-size: 1.5em;
+                }
+            }
+
+            &--content {
+
+                    &--testimonial {
+                        display: flex;
+                        flex: {
+                            direction: column;
+                            shrink: 0;
+                        }
+                        font-size: 1.5em;
+                        width: 100%;
+                        line-height: 1.8rem;
+                        margin: 1em 0rem;
+
+                        .testimonial--author {
+
+                            h4 {
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+            }
+
+            &--numbers {
+
+                .number {
+
+                    width: 10%;
+                    margin: 0 1em;
+                }
+            }
+        }
+    }
+}
+
+@include large {
+    .main {
+        margin-top: 6em;
+     
+        &__presentation {
+    
+        /*---------------------------------------- PROFIL -----------------------------------------------*/
+
+            &--profil {
+
+                &--picture {
+        
+                    img {
+                        border: solid 1.2em $c-white;
+                        border-bottom: solid 3em $c-white;
+                    }
+                }
+        
+                &--description {
+                    font-size: 1.5em;
+                    line-height: 1.8rem;
+        
+                    h1 {
+                        font-size: 3em;
+                        margin-top: 1em;
+                    }
+        
+                    .subtitle {
+                        font-size: 1.5em;
+                        line-height: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        /*---------------------------------------- SERVICES -----------------------------------------------*/
+
+        &__services {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+
+        /*------------------------------------- CONSULTATIONS -------------------------------------------*/
+
+        &__consultations {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+
+         /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
+
+        &__testimonials {
+
+            &--title {
+
+                h1 {
+                    font-size: 3em;
+                }
+
+                .subtitle {
+                    font-size: 1.8em;
+                }
+            }
+
+            &--content {
+
+                    &--testimonial {
+                        display: flex;
+                        flex: {
+                            direction: column;
+                            shrink: 0;
+                        }
+                        font-size: 1.5em;
+                        width: 100%;
+                        line-height: 1.8rem;
+                        margin: 1em 0rem;
+
+                        .testimonial--author {
+
+                            h4 {
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+            }
+
+            &--numbers {
+
+                .number {
+
+                    width: 10%;
+                    margin: 0 1em;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+@include extra-large {
+
+    .main {
+        grid-row-start: 2;
+        background: url("../../assets/images/fond-home.svg");
+        background-size: cover;
+        margin-top: 4em;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        ::selection {
+            background-color: $c-orange-yellow;
+            color: $c-white;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $c-white;
+            opacity: 0.5;
+            z-index: 0;
+        }
+
+        
+          &__presentation {
+            width: 95%;
+            display: flex;
+            flex-direction: raw;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 6em auto;
+            z-index: 2;
+    
+        /*---------------------------------------- PROFIL -----------------------------------------------*/
+        
+            &--profil {
+                display: flex;
+                flex-direction: raw;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: center;
+                width: 70%;
+                background-color: $c-white;
+                border-radius: 20px;
+                padding: 3rem;
+        
+                &--picture {
+                    width: 35%;
+        
+                    img {
+                        width: 80%;
+                        margin-left: 2em;
+                        border: solid 1em $c-white;
+                        border-bottom: solid 4em $c-white;
+                        box-shadow: 15px 15px 100px lighten($c-shadow, 30%);
+                        transform: rotate(5deg);
+                    }
+                }
+        
+                &--description {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    align-self: center;
+                    font-family: $f-body;
+                    color: $c-black-lighten;
+                    text-align: justify;
+                    font-size: 1.2em;
+                    line-height: 1.5rem;
+        
+                    h1 {
+                        text-transform: uppercase;
+                        font-family: $f-landing-page;
+                        color: $c-dark-blue;
+                        font-weight: bold;
+                        font-size: 2.5em;
+        
+                        &::selection {
+                            background-color: $c-orange-yellow;
+                            color: $c-white;
+                        }
+                    }
+        
+                    .subtitle {
+                        color: $c-dark-yellow;
+                        font-family: $f-body-thin;
+                        font-size: 1em;
+                        margin-top: 1em;
+                        margin-bottom: 2rem;
+        
+                        &::selection {
+                            background-color: $c-orange-yellow;
+                            color: $c-white;
+                        }
+                    }
+        
+                    p::selection {
+                        background-color: $c-orange-yellow;
+                        color: $c-white;
+                    }
+                }
+            }
+        }  
+
+        /*---------------------------------------- SERVICES -----------------------------------------------*/
+
+        &__services {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            background-color: $c-white;
+            border-radius: 20px;
+            padding: 4em;
+            font-family: $f-body;
+            color: $c-black-lighten;
+            font-size: 1.2em;
+            line-height: 1.5rem;
+            margin: 10em auto;
+            text-align: justify;
+            z-index: 2;
+
+            h1 {
+                text-transform: uppercase;
+                font-family: $f-landing-page;
+                color: $c-dark-blue;
+                font-weight: bold;
+                font-size: 2.5em;
+                text-align: center;
+            }
+
+            .subtitle {
+                color: $c-dark-yellow;
+                font-family: $f-body;
+                font-size: 1.5em;
+                margin: 2em 0;
+                text-align: center;
+            }
+        }
+
+        /*------------------------------------- CONSULTATIONS -------------------------------------------*/
+
+        &__consultations {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            background-color: $c-dark-yellow;
+            border-radius: 20px;
+            padding: 4em;
+            font-family: $f-body;
+            color: $c-white;
+            font-size: 1.2em;
+            line-height: 1.5rem;
+            margin: 6em auto;
+            text-align: justify;
+            z-index: 2;
+
+            h1 {
+                text-transform: uppercase;
+                font-family: $f-landing-page;
+                color: $c-white;
+                font-size: 2.5em;
+                text-align: center;
+            }
+
+            .subtitle {
+                color: $c-dark-blue;
+                font-family: $f-body;
+                font-size: 1.5em;
+                margin: 2em 0;
+                text-align: center;
+            }
+
+            img {
+                width: 40%;
+                margin: auto;
+                margin-top: 2em;
+            }
+        }
+
+         /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
+
+        &__testimonials {
+            display: flex;
+            flex-direction: column;
+            margin: 10em auto;
+            text-align: justify;
+            z-index: 2;
+
+            &--title {
+                background-color: $c-brick;
+                padding: 2em 0em 1em 0em;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                font-family: $f-landing-page;
+                color: $c-black;
+                font-weight: bold;
+                font-size: 2.5em;
+                text-align: center;
+            }
+
+            .subtitle {
+                color: $c-white;
+                font-family: $f-body;
+                font-size: 1.5em;
+                margin: 1em 0;
+                text-align: center;
+            }
+
+            &--content {
+                display: flex;
+                flex-direction: raw;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                width: 95%;
+                margin: auto;
+
+                    &--testimonial {
+                        width: 35%;
+                        background-color: $c-white;
+                        border-radius: 20px;
+                        padding: 4em;
+                        font-family: $f-body;
+                        color: $c-black-lighten;
+                        font-size: 1.2em;
+                        line-height: 1.5rem;
+                        margin: 1.5em 1em;
+
+                        h4 {
+                            font-family: $f-body-medium;
+                            color: $c-ocre-yellow;
+                            font-size: 1.5em;
+                            margin-bottom: 1em;
+
+                            span {
+                                font-family: $f-body-thin;
+                                color: $c-dark-blue;
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+            }
+
+            &--numbers {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                width: 85%;
+                margin: auto;
+
+                    .number {
+                        width: 20%;
+                        height: 5em;
+                        background-color: transparent;
+                        border-radius: 20px;
+                        border: solid 0.5em $c-brick;
+                        margin: 0 2em;
+                        height: 1em;
+                    }
+
+                    .current {
+                        background-color: $c-brick;
+                    }
+            }
+        }
+    }
+} 

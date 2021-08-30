@@ -1,0 +1,711 @@
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: $c-dark-blue;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Mobile ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:767px){
+
+    .container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+
+        &__title {
+            margin: auto;
+
+            h1 {
+                font-family: $f-landing-page;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                color: $c-white; 
+                z-index: 20;
+                text-shadow: 1px 1px 2px $c-dark-blue;
+            }
+        }
+
+        &__hero {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            &--logo {
+                width: 100%;
+                height: 100%;
+                background: center url("../../assets/images/logo-background.png");
+                background-size: cover;
+                position: relative;
+                
+                &::after {
+                    content: " ";
+                    height: 230px;
+                    width: 230px;
+                    background: none;
+                    box-shadow: 0px 2px 5px $c-black;
+                    border: solid 0.4em;
+                    border-image: linear-gradient($c-light-yellow, $c-ocre-yellow) 90;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: 4.5rem;
+                    left: 4rem;
+                }
+
+                .cercle {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    box-shadow: 0px 2px 10px $c-black;
+                    background: none;
+                    position: absolute;
+                    left: 8.8rem;
+                    z-index: 5;
+                }
+
+                #cercle1 {
+                    top: 4rem;
+                    border: solid $c-ocre-yellow 0.2em;
+                }
+
+                #cercle2 {
+                    top: 9.5rem;
+                    border: solid $c-orange-yellow 0.2em;
+                }
+
+                #cercle3 {
+                    top: 15rem;
+                    border: solid $c-gold-yellow 0.2em;
+                }
+            }
+
+            &--picture {
+                display: none;
+            }
+
+            &--subtitle {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 1em;
+                    color: $c-dark-yellow;
+                }
+            }
+        }
+
+        &__gif {
+            display: none;
+        }
+
+        &__button {
+            margin: auto;
+            align-self: center;
+
+            &--button {
+                display: flex;
+                justify-content: space-around;
+                padding: 1rem 2em;
+                border-radius: 50px;
+                border: solid $c-dark-yellow .1rem;
+                background: transparent;
+                text-decoration: none;
+
+                &:hover {
+                    border: solid $c-light-yellow .1rem;
+                    cursor: pointer;
+                }
+
+                input {
+                    display: none;
+                }
+
+                h3 {
+                    font-size: .85rem;
+                    font-family: $f-landing-page;
+                    color: $c-light-yellow;
+                    text-transform: uppercase;
+                }
+
+                i {
+                    margin-left: 1em;
+                    font-size: 0.85rem;
+                    color: $c-light-yellow;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------- Tablette portrait ---------------------------------*/
+
+@media screen and (min-width:768px){
+
+    .container {
+        display: flex;
+        height: 100vh;
+
+        &__title {
+            margin: auto;
+
+            h1 {
+                font-family: $f-landing-page;
+                font-size: 4em;
+                text-transform: uppercase;
+                color: $c-white; 
+                margin: auto;
+                z-index: 20;
+                text-shadow: 1px 1px 2px $c-dark-blue;
+            }
+        }
+
+        &__hero {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            &--logo {
+                width: 100%;
+                height: 100%;
+                background: center url("../../assets/images/logo-background.png");
+                background-size: cover;
+                position: relative;
+                
+                &::after {
+                    content: " ";
+                    height: 400px;
+                    width: 400px;
+                    background: none;
+                    box-shadow: 0px 2px 5px $c-black;
+                    border: solid 0.6em;
+                    border-image: linear-gradient($c-light-yellow, $c-ocre-yellow) 90;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: 8rem;
+                    left: 11em;
+                }
+
+                .cercle {
+                    width: 135px;
+                    height: 135px;
+                    border-radius: 50%;
+                    box-shadow: 0px 2px 10px $c-black;
+                    background: none;
+                    position: absolute;
+                    left: 19.5rem;
+                    z-index: 5;
+                }
+
+                #cercle1 {
+                    top: 7rem;
+                    border: solid $c-ocre-yellow 0.3em;
+                }
+
+                #cercle2 {
+                    top: 16.5rem;
+                    border: solid $c-orange-yellow 0.3em;
+                }
+
+                #cercle3 {
+                    top: 26rem;
+                    border: solid $c-gold-yellow 0.3em;
+                }
+            }
+
+            &--picture {
+                display: none;
+            }
+
+            &--subtitle {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 1.5em;
+                    color: $c-dark-yellow;
+                }
+            }
+        }
+
+        &__gif {
+            display: none;
+        }
+
+        &__button {
+            margin: auto;
+            align-self: center;
+
+            &--button {
+                display: flex;
+                justify-content: space-around;
+                padding: 1rem 2em;
+                border-radius: 50px;
+                border: solid $c-dark-yellow .1rem;
+                background: transparent;
+                text-decoration: none;
+
+                &:hover {
+                    border: solid $c-light-yellow .1rem;
+                    cursor: pointer;
+                }
+
+                input {
+                    display: none;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    font-family: $f-landing-page;
+                    color: $c-light-yellow;
+                    text-transform: uppercase;
+                }
+
+                i {
+                    margin-left: 1em;
+                    font-size: 1.2rem;
+                    color: $c-light-yellow;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------- Tablette paysage ---------------------------------*/
+
+@media screen and (min-width:992px){
+
+    .container {
+        flex-direction: column;
+
+        &__title {
+
+            h1 {
+                font-family: $f-landing-page;
+                font-size: 6em;
+                text-transform: uppercase;
+                color: $c-white; 
+                position: absolute;
+                top: 7rem;
+                right: 1rem;
+                z-index: 20;
+                text-shadow: 1px 1px 2px $c-dark-blue;
+            }
+        }
+
+        &__hero {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+
+            &--logo {
+                width: 50%;
+                background: center url("../../assets/images/logo-background.png");
+                background-size: cover;
+                margin-left: -5em;
+                overflow: hidden;
+                
+                &::after {
+                    content: " ";
+                    height: 400px;
+                    width: 400px;
+                    background: none;
+                    box-shadow: 0px 2px 15px $c-black;
+                    border: solid .7em;
+                    border-image: linear-gradient($c-light-yellow, $c-ocre-yellow) 90;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: 9em;
+                    left: 0;
+                }
+
+                .cercle {
+                    width: 130px;
+                    height: 130px;
+                    border-radius: 50%;
+                    box-shadow: 0px 2px 10px $c-black;
+                    background: none;
+                    position: absolute;
+                    left: -20rem;
+                    z-index: 5;
+                    animation-duration: 1s;
+                    animation-name: slide-in;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+
+                #cercle1 {
+                    border: solid $c-ocre-yellow 0.3em;
+                    top: 9rem;
+                }
+
+                #cercle2 {
+                    border: solid $c-orange-yellow 0.3em;
+                    top: 18rem;
+                    animation-delay: 1s;
+                }
+
+                #cercle3 {
+                    border: solid $c-gold-yellow 0.3em;
+                    top: 27rem;
+                    animation-delay: 2s;
+                }
+
+                @keyframes slide-in {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        left: 9rem;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &--picture {
+                width: 45%;
+                height: 45%;
+                align-self: center;
+                margin-left: -6em;
+                background: center url("../../assets/images/pic-background.png");
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                z-index: 15;
+                overflow: hidden;
+
+                img {
+                    align-self: center;
+                    width: 75%;
+                    box-shadow: 0px 2px 15px $c-black;
+                    animation-duration: 3s;
+                    animation-name: slide;
+                    animation-iteration-count: 1;
+                }
+
+                @keyframes slide {
+                    0% {
+                        transform: translateX(200%);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &--subtitle {
+                width: 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-self: center;
+
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 1.5em;
+                    color: $c-dark-yellow;
+                    align-self: center;
+                    text-align: center;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        &__gif {
+            display: none;
+        }
+
+        &__button {
+            position: absolute;
+            left: 50%;
+            bottom: 5rem;
+            
+            &--button {
+                width: 15rem;
+                padding: 1rem;
+                display: flex;
+                justify-content: space-around;
+                border-radius: 50px;
+                border: solid $c-dark-yellow .2rem;
+                background: transparent;
+                text-decoration: none;
+
+                &:hover {
+                    border: solid $c-light-yellow .2rem;
+                    transition: 0.5s;
+                    cursor: pointer;
+
+                    i {
+                        animation: 1s ease-in-out 0s infinite running slidein;
+                    }
+                }
+
+                @keyframes slidein {
+                    0% {
+                        transform: translateX(-200%);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+
+                input {
+                    display: none;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    font-family: $f-landing-page;
+                    color: $c-light-yellow;
+                    text-transform: uppercase;
+                }
+
+                i {
+                    font-size: 1.2rem;
+                    color: $c-light-yellow;
+
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:1200px){
+
+    .container {
+        flex-direction: column;
+
+        &__title {
+
+            h1 {
+                font-family: $f-landing-page;
+                font-size: 8em;
+                text-transform: uppercase;
+                color: $c-white; 
+                position: absolute;
+                top: 10rem;
+                right: 1rem;
+                z-index: 20;
+                text-shadow: 1px 1px 2px $c-dark-blue;
+            }
+        }
+
+        &__hero {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+
+            &--logo {
+                width: 50%;
+                background: center url("../../assets/images/logo-background.png");
+                background-size: cover;
+                margin-left: -5em;
+                overflow: hidden;
+                
+                &::after {
+                    content: " ";
+                    height: 550px;
+                    width: 550px;
+                    background: none;
+                    box-shadow: 0px 2px 15px $c-black;
+                    border: solid 1em;
+                    border-image: linear-gradient($c-light-yellow, $c-ocre-yellow) 90;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: 9em;
+                    left: 0;
+                }
+
+                .cercle {
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+                    box-shadow: 0px 2px 10px $c-black;
+                    background: none;
+                    position: absolute;
+                    left: -20rem;
+                    z-index: 5;
+                    animation-duration: 1s;
+                    animation-name: slide-in;
+                    animation-iteration-count: 1;
+                    animation-fill-mode: forwards;
+                }
+
+                #cercle1 {
+                    border: solid $c-ocre-yellow 0.5em;
+                    top: 8.5rem;
+                }
+
+                #cercle2 {
+                    border: solid $c-orange-yellow 0.5em;
+                    top: 21rem;
+                    animation-delay: 1s;
+                }
+
+                #cercle3 {
+                    border: solid $c-gold-yellow 0.5em;
+                    top: 33.5rem;
+                    animation-delay: 2s;
+                }
+
+                @keyframes slide-in {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        left: 12rem;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &--picture {
+                width: 40%;
+                height: 45%;
+                align-self: center;
+                margin-left: -4em;
+                background: center url("../../assets/images/pic-background.png");
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                z-index: 15;
+                overflow: hidden;
+
+                img {
+                    align-self: center;
+                    width: 70%;
+                    box-shadow: 0px 2px 15px $c-black;
+                    animation-duration: 3s;
+                    animation-name: slide;
+                    animation-iteration-count: 1;
+                }
+
+                @keyframes slide {
+                    0% {
+                        transform: translateX(200%);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &--subtitle {
+                width: 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-self: center;
+
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 1.5em;
+                    color: $c-dark-yellow;
+                    align-self: center;
+                    text-align: center;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        &__gif {
+            position: absolute;
+            right: 10rem;
+            bottom: 5rem;
+        }
+
+        &__button {
+            position: absolute;
+            left: 40%;
+            bottom: 5rem;
+            
+            &--button {
+                width: 20rem;
+                padding: 1rem;
+                display: flex;
+                justify-content: space-around;
+                border-radius: 50px;
+                border: solid $c-dark-yellow .2rem;
+                background: transparent;
+                text-decoration: none;
+
+                &:hover {
+                    border: solid $c-light-yellow .2rem;
+                    transition: 0.5s;
+                    cursor: pointer;
+
+                    i {
+                        animation: 1s ease-in-out 0s infinite running slidein;
+                    }
+                }
+
+                @keyframes slidein {
+                    0% {
+                        transform: translateX(-200%);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+
+                input {
+                    display: none;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-family: $f-landing-page;
+                    color: $c-light-yellow;
+                    text-transform: uppercase;
+                }
+
+                i {
+                    font-size: 1.5rem;
+                    color: $c-light-yellow;
+
+                }
+            }
+        }
+    }
+}

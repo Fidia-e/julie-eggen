@@ -1,0 +1,155 @@
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Mobile ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include small {
+
+    .main-at {
+        grid-row-start: 2;
+        margin: 2em auto 0em auto;
+        padding-bottom: 6em;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: $c-white;
+        text-align: center;
+        ::selection {
+            background-color: $c-orange-yellow;
+            color: $c-white;
+        }
+    
+        &__elements {
+    
+            h2 {
+                font-family: $f-landing-page;
+                text-transform: uppercase;
+                font-size: 2em;
+                color: $c-dark-yellow;
+                margin: 2em auto;
+            }
+    
+            img {
+                width: 40%;
+                margin: 0em auto 1em auto;
+            }
+            p {
+                font-family: $f-body;
+                color: $c-black-lighten;
+                font-size: 1em;
+                line-height: 1.8rem;
+                width: 80%;
+                margin: 2em auto;
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include medium {
+
+    .main-at {
+        margin: 6em auto 4em auto;
+    
+        &__elements {
+    
+            h2 {
+                font-size: 2em;
+                width: 90%;
+            }
+
+            img {
+                margin-bottom: 4em;
+            }
+
+            p {
+                font-family: $f-body;
+                color: $c-black-lighten;
+                font-size: 1.5em;
+                line-height: 1.8rem;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+    }
+
+}
+
+@include large {
+
+    .main-at {
+        margin: 8em auto 4em auto;
+    
+        &__elements {
+    
+            h2 {
+                font-size: 3em;
+                width: 90%;
+            }
+
+            img {
+                margin-bottom: 6em;
+            }
+
+            p {
+                font-family: $f-body;
+                color: $c-black-lighten;
+                font-size: 1.8em;
+                line-height: 2rem;
+                width: 80%;
+                margin: auto;
+            }
+        }
+    }
+}
+ 
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include extra-large {
+
+    .main-at {
+        grid-row-start: 2;
+        margin: 6em auto 0em auto;
+        padding-bottom: 6em;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: $c-white;
+        text-align: center;
+        ::selection {
+            background-color: $c-orange-yellow;
+            color: $c-white;
+        }
+        
+        &__elements {
+            
+            h2 {
+                font-family: $f-landing-page;
+                text-transform: uppercase;
+                font-size: 3em;
+                color: $c-dark-yellow;
+                margin: 2em auto;
+            }
+            
+            img {
+                width: 20%;
+                margin: 1em auto 4em auto;
+            }
+            p {
+                font-family: $f-body;
+                color: $c-black-lighten;
+                font-size: 1.5em;
+                line-height: 1.8rem;
+                width: 80%;
+                margin: 2em auto;
+            }
+        }
+    }
+}
