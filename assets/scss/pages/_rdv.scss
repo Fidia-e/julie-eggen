@@ -1,74 +1,187 @@
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Mobile ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
 
-
-.header-consult {
-    border-bottom: 1px solid $c-ocre-yellow;
-}
-
-.main-consultations {
-    grid-row-start: 2;
-    background: url("../../assets/images/fond-consultations.svg");
-    background-size: cover;
-    background-position: center;
-    height: 3500px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    background-color: $c-white;
-    border-bottom: 1px solid $c-ocre-yellow;
-    ::selection {
-        background-color: $c-orange-yellow;
-        color: $c-white;
-    }
-
-    &__text {
-        font-size: 2em;
-        color: $c-black-lighten;
-        width: 40%;
-        margin: 6em 2em;
-        text-align: center;
-
-        h3 {
-            font-family: $f-landing-page;
-            color: $c-ocre-yellow;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-bottom: 1em;
-            margin-bottom: 0.5em;
+@include small {
+    
+    .main-consultations {
+        grid-row-start: 2;
+        margin-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        background-color: $c-white;
+        ::selection {
+            background-color: $c-orange-yellow;
+            color: $c-white;
+        }
+    
+        &__text {
+            font-size: 1em;
+            color: $c-black-lighten;
+            width: 60%;
+            margin: 0em 2em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            h3 {
+                font-family: $f-landing-page;
+                color: $c-ocre-yellow;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1em;
+                margin-bottom: 0.5em;
+            }
+    
+            .bottom-line {
+                background-color: $c-dark-blue;
+                width: 30%;
+                margin-bottom: 1em;
+            }
+    
+            span {
+                color: $c-ocre-yellow;
+            }
+    
+            .address-span {
+                margin-top: 1em;
+                display: block;
+            }
+    
+            img {
+                margin-top: 1em;
+                width: 60%;
+            }
+    
+            .img-map {
+                box-shadow: 0px 0px 10px lighten($c-shadow, 50%);
+                width: 60%;
+            }
+    
+            .img-agenda {
+                width: 30%;
+            }
+        }
+    
+        .main-consultations__text--contact, .main-consultations__text--consult {
+            align-self: flex-end;
         }
 
-        .bottom-line {
-            background-color: $c-dark-blue;
-            width: 30%;
-            margin-bottom: 1em;
-        }
-
-        span {
-            color: $c-ocre-yellow;
-        }
-
-        .address-span {
-            margin-top: 1em;
+        .main-consultations__text--contact::before {
+            content: url(../../assets/images/etape-1.png);
             display: block;
+            position: relative;
+            right: 10rem; 
+            top: 10em;
         }
 
-        img {
-            margin-top: 2em;
-            width: 80%;
+        .main-consultations__text--agenda::after {
+            content: url(../../assets/images/etape-2.png);
+            display: block;
+            position: relative;
+            left: 10rem; 
+            top: -10em;
         }
 
-        .img-map {
-            box-shadow: 0px 0px 20px lighten($c-shadow, 50%);
+        .main-consultations__text--consult::before {
+            content: url(../../assets/images/etape-3.png);
+            display: block;
+            position: relative;
+            right: 10rem; 
+            bottom: -10em;
         }
 
-        .img-agenda {
-            width: 40%;
+        .main-consultations__text--agenda {
+            margin: 8em 0em 0em 2em;
         }
-    }
 
-    .main-consultations__text--agenda {
-        align-self: flex-end;
+        .main-consultations__text--consult {
+            margin-top: -2em;
+        }
     }
 }
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+ /*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include extra-large {
+    
+    .main-consultations {
+        grid-row-start: 2;
+        background: url("../../assets/images/fond-consultations.svg");
+        background-size: cover;
+        background-position: center;
+        height: 3500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        background-color: $c-white;
+        ::selection {
+            background-color: $c-orange-yellow;
+            color: $c-white;
+        }
+    
+        &__text {
+            font-size: 2em;
+            color: $c-black-lighten;
+            width: 40%;
+            margin: 6em 2em;
+            text-align: center;
+    
+            h3 {
+                font-family: $f-landing-page;
+                color: $c-ocre-yellow;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 0.5em;
+            }
+    
+            .bottom-line {
+                background-color: $c-dark-blue;
+                width: 30%;
+                margin-bottom: 1em;
+            }
+    
+            span {
+                color: $c-ocre-yellow;
+            }
+    
+            .address-span {
+                margin-top: 1em;
+                display: block;
+            }
+    
+            img {
+                margin-top: 2em;
+                width: 80%;
+            }
+    
+            .img-map {
+                box-shadow: 0px 0px 20px lighten($c-shadow, 50%);
+            }
+    
+            .img-agenda {
+                width: 40%;
+            }
+        }
+    
+        .main-consultations__text--agenda {
+            align-self: flex-end;
+        }
+    }
+}
+
