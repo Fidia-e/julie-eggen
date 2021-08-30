@@ -322,12 +322,210 @@
 @include medium {
     .main {
         margin-top: 4em;
+     
+        &__presentation {
+    
+        /*---------------------------------------- PROFIL -----------------------------------------------*/
+
+            &--profil {
+
+                &--picture {
+        
+                    img {
+                        border: solid 1.2em $c-white;
+                        border-bottom: solid 3em $c-white;
+                    }
+                }
+        
+                &--description {
+                    font-size: 1.5em;
+                    line-height: 1.8rem;
+        
+                    h1 {
+                        font-size: 2em;
+                        margin-top: 1em;
+                    }
+        
+                    .subtitle {
+                        font-size: 1.5em;
+                        line-height: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        /*---------------------------------------- SERVICES -----------------------------------------------*/
+
+        &__services {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+
+        /*------------------------------------- CONSULTATIONS -------------------------------------------*/
+
+        &__consultations {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+
+         /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
+
+        &__testimonials {
+
+            &--title {
+
+                h1 {
+                    font-size: 2em;
+                }
+
+                .subtitle {
+                    font-size: 1.5em;
+                }
+            }
+
+            &--content {
+
+                    &--testimonial {
+                        display: flex;
+                        flex: {
+                            direction: column;
+                            shrink: 0;
+                        }
+                        font-size: 1.5em;
+                        width: 100%;
+                        line-height: 1.8rem;
+                        margin: 1em 0rem;
+
+                        .testimonial--author {
+
+                            h4 {
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+            }
+        }
     }
 }
 
 @include large {
     .main {
         margin-top: 6em;
+     
+        &__presentation {
+    
+        /*---------------------------------------- PROFIL -----------------------------------------------*/
+
+            &--profil {
+
+                &--picture {
+        
+                    img {
+                        border: solid 1.2em $c-white;
+                        border-bottom: solid 3em $c-white;
+                    }
+                }
+        
+                &--description {
+                    font-size: 1.5em;
+                    line-height: 1.8rem;
+        
+                    h1 {
+                        font-size: 3em;
+                        margin-top: 1em;
+                    }
+        
+                    .subtitle {
+                        font-size: 1.5em;
+                        line-height: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        /*---------------------------------------- SERVICES -----------------------------------------------*/
+
+        &__services {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+
+        /*------------------------------------- CONSULTATIONS -------------------------------------------*/
+
+        &__consultations {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+
+         /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
+
+        &__testimonials {
+
+            &--title {
+
+                h1 {
+                    font-size: 2em;
+                }
+
+                .subtitle {
+                    font-size: 1.5em;
+                }
+            }
+
+            &--content {
+
+                    &--testimonial {
+                        display: flex;
+                        flex: {
+                            direction: column;
+                            shrink: 0;
+                        }
+                        font-size: 1.5em;
+                        width: 100%;
+                        line-height: 1.8rem;
+                        margin: 1em 0rem;
+
+                        .testimonial--author {
+
+                            h4 {
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+            }
+        }
     }
 }
 
