@@ -1,6 +1,10 @@
-@media screen and (max-width:1199px){
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Mobile ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
 
-   .main__presentation--articles {
+@include small {
+
+    .main__presentation--articles {
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -61,8 +65,81 @@
     }
 }
 
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width:1200px){
+ @include medium {
+
+    .main__presentation--articles {
+    
+        h2 {
+            font-size: 1.5em;
+            border-bottom: solid 2px $c-dark-yellow;
+        }
+    
+        article {
+            font-size: 1.2em;
+            line-height: 1.5rem;
+    
+            h3 {
+                font-size: 1.2em;
+            }
+    
+            .date {
+                font-size: 1em;
+            }
+        }
+    
+        .articles--more {
+            font-size: 1em;
+    
+            i{
+                margin-top: 0.2em;
+            }
+        }
+    }
+ }
+
+ @include large {
+
+    .main__presentation--articles {
+    
+        h2 {
+            margin-top: .5em;
+            font-size: 2em;
+            border-bottom: solid 2px $c-dark-yellow;
+        }
+    
+        article {
+            font-size: 1.4em;
+            line-height: 2rem;
+    
+            h3 {
+                font-size: 1.5em;
+            }
+    
+            .date {
+                font-size: 1.2em;
+            }
+        }
+    
+        .articles--more {
+            font-size: 1.1em;
+    
+            i{
+                margin-top: 0.2em;
+            }
+        }
+    }
+ }
+
+
+ /*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include extra-large {
 
     .main__presentation--articles {
         display: flex;
@@ -122,4 +199,4 @@
             }
         }
     }
-} 
+}
