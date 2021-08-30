@@ -25,7 +25,7 @@
                 text-transform: uppercase;
                 font-size: 2em;
                 color: $c-dark-yellow;
-                margin: 2em auto;
+                margin: 2em;
             }
     
             img {
@@ -51,17 +51,41 @@
  @include medium {
 
      .main-seances {
-        margin-top: 3em;
+        margin-top: 4em;
+
+        &__elements {
+    
+            h2 {
+                margin: 2em 3em;
+            }
+
+            p {
+                font-size: 1.5em;
+                line-height: 1.8rem;
+            }
+        }
      }
  }
 
  @include large {
 
-    // .main-seances {
+    .main-seances {
+        margin: 6em auto 0em auto;
+    
+        &__elements {
+    
+            h2 {
+                font-size: 2.5em;
+            }
 
-    // }
+            p {
+                font-size: 1.5em;
+                line-height: 1.8rem;
+            }
+        }
+    }
+
 }
-
 
 
  /*----------------------------------------------------------------------------------------------------------
