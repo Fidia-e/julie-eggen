@@ -2,3 +2,7 @@
 dist
 node_modules
 vendor
+wp
+/wp-config.php
+/wp-content
+/install.md

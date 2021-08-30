@@ -1,35 +1,46 @@
+.header-dark {
+    background-color: $c-dark-blue;
+}
+
+.header-light {
+    background-color: $c-white;
+}
+
+.title-dark-header {
+    color: $c-white;
+}
+
+.title-light-header {
+    color: $c-dark-blue;
+}
+
 /*----------------------------------------------------------------------------------------------------------
  ---------------------------------------------- Mobile ----------------------------------------------------
  ----------------------------------------------------------------------------------------------------------*/
 
 @include small {
 
-    .header-dark {
-        background-color: $c-dark-blue;
-    }
-
-    .header-light {
-        background-color: $c-white;
-    }
-
     .header {
         grid-row-start: 1;
         display: flex;
+        width: 100%;
         flex-direction: column;
-        // width: 100%;
         text-align: center;
         position: fixed;
         z-index: 20;
 
         .menu-burger-button {
             display: flex;
-            cursor: pointer;
             font-size: 1.5em;
             color: $c-dark-blue;
             position: absolute;
             text-decoration: none;
             top: 0.3em;
             right: .7em;
+        }
+
+        .burger-light {
+            color: $c-white;
         }
 
         &__logo {
@@ -55,6 +66,10 @@
                     font-size: 1em;
                     margin-left: 0.5rem;
                 }
+
+                .title-dark-header {
+                    color: $c-white;
+                }
             }
         }
 
@@ -72,9 +87,10 @@
  ---------------------------------------------- Tablette ----------------------------------------------------
  ----------------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width:768px) and (max-width:991px){
+ @include medium {
 
     .header {
+        
         h1 {
             font-size: 2em;
         } 
@@ -85,11 +101,13 @@
             right: .7em;
         }
     }
+
 }
 
-@media screen and (min-width:992px) and (max-width:1024px){
+@include large {
 
     .header {
+
         h1 {
             font-size: 2.2em;
         } 
@@ -100,21 +118,15 @@
             right: .7em;
         }
     }
+    
 }
+
 
 /*----------------------------------------------------------------------------------------------------------
  ---------------------------------------------- Desktop ----------------------------------------------------
  ----------------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width:1200px){
-
-    .header-dark {
-        background-color: $c-dark-blue;
-    }
-
-    .header-light {
-        background-color: $c-white;
-    }
+@include extra-large {
 
     .header {
         grid-row-start: 1;
@@ -148,13 +160,6 @@
                     margin-left: 0.5rem;
                 }
 
-                .title-dark-header {
-                    color: $c-white;
-                }
-
-                .title-light-header {
-                    color: $c-dark-blue;
-                }
             }
         }
     
@@ -340,7 +345,7 @@
                 }
     
                 .active {
-                    color: $c-dark-yellow;
+                    color: $c-ocre-yellow;
                 }
             }
         }

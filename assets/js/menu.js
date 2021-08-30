@@ -1,11 +1,11 @@
-const app = {
+const appMenu = {
 
     init: function() {
         // je récupère le bouton burger
         const menuButton = document.querySelector('.menu-burger-button');
 
         // je lui pose un écouteur d'évenement 
-        menuButton.addEventListener('click', app.handleMenuButtonClick);
+        menuButton.addEventListener('click', appMenu.handleMenuButtonClick);
     },
 
     handleMenuButtonClick: function() {
@@ -32,7 +32,7 @@ const app = {
         // je récupère le bouton de fermeture du menu
         const crossButton = document.querySelector('.copyNav .close-menu-button');
 
-        crossButton.addEventListener('click', app.handleCloseButtonClick);
+        crossButton.addEventListener('click', appMenu.handleCloseButtonClick);
     },
 
     handleCloseButtonClick: function() {
@@ -50,4 +50,4 @@ const app = {
 }
   
 // une fois le DOM chargé, j'initialise le module "app" via sa méthode "init"
-document.addEventListener("DOMContentLoaded", app.init);
+document.addEventListener("DOMContentLoaded", appMenu.init);

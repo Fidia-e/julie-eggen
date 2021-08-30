@@ -1,0 +1,27 @@
+{
+    "name": "fidia/julie-eggen",
+    "authors": [
+        {
+            "name": "Fidie-e",
+            "email": "elbouanani.f@gmail.com"
+        }
+    ],
+    "extra": {
+        "wordpress-install-dir": "wp"
+    },
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^5.8",
+        "wpackagist-theme/twentytwenty": "^1.8",
+        "wpackagist-plugin/akismet": "^4.1"
+    }
+}
