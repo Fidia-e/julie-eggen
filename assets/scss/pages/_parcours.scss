@@ -44,7 +44,6 @@
             }
         } 
     }
-    
 }
 
 /*----------------------------------------------------------------------------------------------------------
@@ -53,9 +52,58 @@
 
  @include medium {
 
+    .main-parcours {
+        margin: 6em auto 0em auto;
+
+        &__elements {
+    
+            h2 {
+                font-size: 2em;
+            }
+    
+            img {
+                width: 50%;
+                margin: 0em auto;
+            }
+    
+            p {
+                font-family: $f-body;
+                color: $c-black-lighten;
+                font-size: 1.5em;
+                line-height: 1.8rem;
+                width: 80%;
+                margin: 2em auto;
+            }
+        } 
+    }
 }
 
 @include large {
+
+    .main-parcours {
+        margin: 6em auto 0em auto;
+
+        &__elements {
+    
+            h2 {
+                font-size: 3em;
+            }
+    
+            img {
+                width: 50%;
+                margin: 0em auto;
+            }
+    
+            p {
+                font-family: $f-body;
+                color: $c-black-lighten;
+                font-size: 1.8em;
+                line-height: 2rem;
+                width: 80%;
+                margin: 2em auto;
+            }
+        } 
+    }
     
 }
 
