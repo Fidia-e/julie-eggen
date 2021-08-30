@@ -31,7 +31,7 @@
     
             img {
                 width: 40%;
-                margin: 1em auto 4em auto;
+                margin: 0em auto 1em auto;
             }
             p {
                 font-family: $f-body;
@@ -52,9 +52,61 @@
 
 @include medium {
 
+    .main-at {
+        margin: 6em auto 4em auto;
+    
+        &__elements {
+    
+            h2 {
+                font-size: 2em;
+                width: 90%;
+            }
+
+            img {
+                margin-bottom: 4em;
+            }
+
+            p {
+                font-family: $f-body;
+                color: $c-black-lighten;
+                font-size: 1.5em;
+                line-height: 1.8rem;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+    }
+
 }
 
 @include large {
+
+    .main-at {
+        margin: 8em auto 4em auto;
+    
+        &__elements {
+    
+            h2 {
+                font-size: 3em;
+                width: 90%;
+            }
+
+            img {
+                margin-bottom: 6em;
+            }
+
+            p {
+                font-family: $f-body;
+                color: $c-black-lighten;
+                font-size: 1.8em;
+                line-height: 2rem;
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+    }
     
 }
 
