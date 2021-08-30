@@ -1,121 +1,121 @@
-/*----------------------------------------------------------------------------------------------------------
- ---------------------------------------------- Mobile ----------------------------------------------------
- ----------------------------------------------------------------------------------------------------------*/
+// /*----------------------------------------------------------------------------------------------------------
+//  ---------------------------------------------- Mobile ----------------------------------------------------
+//  ----------------------------------------------------------------------------------------------------------*/
 
-@include small {
+// @include small {
 
-    .footer-dark {
-        grid-row-start: 3;
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $c-dark-blue;
-        padding: 2em 0em;
-        font-family: $f-landing-page;
+//     .footer-dark {
+//         grid-row-start: 3;
+//         height: 100px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: center;
+//         background-color: $c-dark-blue;
+//         padding: 2em 0em;
+//         font-family: $f-landing-page;
     
-        &__social {
-            display: flex;  
+//         &__social {
+//             display: flex;  
     
-            h4 {
-                color: $c-orange-yellow;
-                font-size: 1em;
-                margin: auto;
-            }
+//             h4 {
+//                 color: $c-orange-yellow;
+//                 font-size: 1em;
+//                 margin: auto;
+//             }
     
-            .fa-arrow-right {
-                font-size: 1em;
-                margin-right: 1em;
-                margin-left: 0.5em;
-            }
+//             .fa-arrow-right {
+//                 font-size: 1em;
+//                 margin-right: 1em;
+//                 margin-left: 0.5em;
+//             }
             
-            i {
-                color: $c-orange-yellow;
-                font-size: 1.2em;
-                align-self: center;
-            }
-        }
+//             i {
+//                 color: $c-orange-yellow;
+//                 font-size: 1.2em;
+//                 align-self: center;
+//             }
+//         }
     
-        p {
-            font-family: $f-body;
-            color: $c-ocre-yellow;
-            font-size: 1em;
-        }
+//         p {
+//             font-family: $f-body;
+//             color: $c-ocre-yellow;
+//             font-size: 1em;
+//         }
     
-        a {
-            text-decoration: none;
-            color: $c-white;
-            font-weight: bold;
-            margin-right: 0.5em;
-            font-size: 1em;
-        }
-    }
-}
+//         a {
+//             text-decoration: none;
+//             color: $c-white;
+//             font-weight: bold;
+//             margin-right: 0.5em;
+//             font-size: 1em;
+//         }
+//     }
+// }
 
-/*----------------------------------------------------------------------------------------------------------
- ---------------------------------------------- Tablette ----------------------------------------------------
- ----------------------------------------------------------------------------------------------------------*/
-
-
+// /*----------------------------------------------------------------------------------------------------------
+//  ---------------------------------------------- Tablette ----------------------------------------------------
+//  ----------------------------------------------------------------------------------------------------------*/
 
 
-/*----------------------------------------------------------------------------------------------------------
- ---------------------------------------------- Desktop ----------------------------------------------------
- ----------------------------------------------------------------------------------------------------------*/
 
-@include extra-large {
+
+// /*----------------------------------------------------------------------------------------------------------
+//  ---------------------------------------------- Desktop ----------------------------------------------------
+//  ----------------------------------------------------------------------------------------------------------*/
+
+// @include extra-large {
     
-    .footer-dark {
-        grid-row-start: 3;
-        display: flex;
-        max-width: 100%;
-        flex-direction: raw;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        padding: 7em;
-        font-family: $f-landing-page;
-        background-color: $c-dark-blue;
+//     .footer-dark {
+//         grid-row-start: 3;
+//         display: flex;
+//         max-width: 100%;
+//         flex-direction: raw;
+//         flex-wrap: wrap;
+//         justify-content: space-around;
+//         align-items: center;
+//         padding: 7em;
+//         font-family: $f-landing-page;
+//         background-color: $c-dark-blue;
         
-        &__social {
-            width: 50%;
-            display: flex;
-            flex-direction: raw;
-            flex-wrap: nowrap;
-            justify-content: center;
+//         &__social {
+//             width: 50%;
+//             display: flex;
+//             flex-direction: raw;
+//             flex-wrap: nowrap;
+//             justify-content: center;
             
-            h4 {
-                color: $c-orange-yellow;
-                font-size: 1.5em;
-                margin-right: 1em;
-                align-self: center;
-            }
+//             h4 {
+//                 color: $c-orange-yellow;
+//                 font-size: 1.5em;
+//                 margin-right: 1em;
+//                 align-self: center;
+//             }
             
-            .fa-arrow-right {
-                font-size: 1.5em;
-                margin-right: 2em;
-            }
+//             .fa-arrow-right {
+//                 font-size: 1.5em;
+//                 margin-right: 2em;
+//             }
             
-            i {
-                color: $c-orange-yellow;
-                font-size: 2.5em;
-                align-self: center;
-            }
-        }
+//             i {
+//                 color: $c-orange-yellow;
+//                 font-size: 2.5em;
+//                 align-self: center;
+//             }
+//         }
         
-        p {
-            font-family: $f-body;
-            color: $c-ocre-yellow;
-            font-size: 1.2em;
-        }
+//         p {
+//             font-family: $f-body;
+//             color: $c-ocre-yellow;
+//             font-size: 1.2em;
+//         }
         
-        a {
-            text-decoration: none;
-            margin: 0 1em;
-            color: $c-white;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-    }
-}
+//         a {
+//             text-decoration: none;
+//             margin: 0 1em;
+//             color: $c-white;
+//             font-weight: bold;
+//             font-size: 1.2em;
+//         }
+//     }
+// }
