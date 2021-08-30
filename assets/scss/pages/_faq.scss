@@ -113,11 +113,63 @@
  ---------------------------------------------- Tablette ----------------------------------------------------
  ----------------------------------------------------------------------------------------------------------*/
 
- @include medium {
+@include medium {
+
+    .main-faq {
+        margin: 4em auto 0em auto;
+        padding-bottom: 6em;
+    
+        &__title {
+            line-height: 1.5em;
+    
+            h2 {
+                font-size: 2.5em;
+            }
+    
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+    
+        &__questions {
+            font-size: 1.4em;
+            line-height: 1.8rem;
+    
+            .question {
+                font-size: 1.5em;
+            }
+        }
+    }
 
 }
 
 @include large {
+
+    .main-faq {
+        margin: 6em auto 0em auto;
+        padding-bottom: 8em;
+    
+        &__title {
+            line-height: 1.5em;
+    
+            h2 {
+                font-size: 3em;
+            }
+    
+            .subtitle {
+                font-size: 2em;
+            }
+        }
+    
+        &__questions {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+    
+            .question {
+                font-size: 1.5em;
+            }
+        }
+    }
     
 }
 
