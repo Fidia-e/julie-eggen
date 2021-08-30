@@ -1,91 +1,271 @@
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Mobile ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
 
-.main-faq {
-    grid-row-start: 2;
-    background: url("../../assets/images/fond-home.svg");
-    background-size: cover;
-    margin: 5em auto 0em auto;
-    padding-bottom: 6em;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    background-color: $c-white;
-    ::selection {
-        background-color: $c-orange-yellow;
-        color: $c-white;
-    }
+ @include small {
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: $c-white;
-        opacity: 0.5;
-        z-index: 0;
-      }
-
-    &__title {
-        display: flex;
-        flex-direction: column;
-        margin: 4em auto;
-        padding: 2em 0em 1em 0em;
+    .main-faq {
+        grid-row-start: 2;
+        background: url("../../assets/images/fond-home.svg");
+        background-size: cover;
+        margin: 1em auto 0em auto;
+        padding-bottom: 4em;
         width: 100%;
-        z-index: 2;
-        align-items: center;
-        background-color: $c-brick;
-        line-height: 2em;
-
-        h2 {
-            font-family: $f-landing-page;
-            color: $c-black;
-            font-weight: bold;
-            font-size: 2.5em;
-            text-transform: uppercase;
-            font-size: 2em;
-        }
-
-        .subtitle {
-            color: $c-white;
-            font-family: $f-body;
-            font-size: 1.5em;
-            margin: 1em 0;
-            text-align: center;
-        }
-    }
-
-    &__questions {
         display: flex;
-        flex-direction: column;
-        width: 85%;
+        flex-wrap: wrap;
+        position: relative;
         background-color: $c-white;
-        border-radius: 20px;
-        padding: 4em;
-        box-shadow: 15px 15px 100px $c-shadow;
-        font-family: $f-body;
-        color: $c-black-lighten;
-        font-size: 1.2em;
-        line-height: 1.5rem;
-        margin: auto;
-        text-align: justify;
-        z-index: 2;
-
-        &--single {
-
+        ::selection {
+            background-color: $c-orange-yellow;
+            color: $c-white;
         }
-
-        .question {
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $c-white;
+            opacity: 0.5;
+            z-index: 0;
+          }
+    
+        &__title {
             display: flex;
-            flex-direction: raw;
-            color: $c-ocre-yellow;
-            font-size: 1.2em;
-            margin: 2.5em 0em 1em 0em;
+            flex-direction: column;
+            margin: 4em auto;
+            padding: 2em 0em 1em 0em;
+            width: 100%;
+            z-index: 2;
+            align-items: center;
+            background-color: $c-brick;
+            line-height: 1.5em;
+    
+            h2 {
+                font-family: $f-landing-page;
+                color: $c-black;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 2em;
+            }
+    
+            .subtitle {
+                color: $c-white;
+                font-family: $f-body;
+                font-size: 1em;
+                margin: 1em 0;
+                text-align: center;
+            }
+        }
+    
+        &__questions {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            background-color: $c-white;
+            border-radius: 20px;
+            box-shadow: 15px 15px 100px $c-shadow;
+            font-family: $f-body;
+            color: $c-black-lighten;
+            font-size: 1em;
+            line-height: 1.3rem;
+            margin: auto;
+            text-align: justify;
+            z-index: 2;
 
-            i {
-                margin-left: 1em;
+            :nth-child(n) {
+                margin: 0em .7em;
+            }
+    
+            &--single:last-child {
+                margin-bottom: 1.5em;
+            }
+    
+            .question {
+                display: flex;
+                flex-direction: raw;
+                color: $c-ocre-yellow;
+                font-size: 1.2em;
+                margin: 1.2em 0em 0.5em 0.5em;
+                // margin: 2.5em 0em 1em 0em;
+
+                h3 {
+                  text-align: start;
+                }
+    
+                i {
+                    float: right;
+                    // margin-left: 1em;
+                }
+
+                &:first-child {
+                    margin-top: 1.5em;
+                }
             }
         }
     }
+ }
+
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include medium {
+
+    .main-faq {
+        margin: 4em auto 0em auto;
+        padding-bottom: 6em;
+    
+        &__title {
+            line-height: 1.5em;
+    
+            h2 {
+                font-size: 2.5em;
+            }
+    
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+    
+        &__questions {
+            font-size: 1.4em;
+            line-height: 1.8rem;
+    
+            .question {
+                font-size: 1.5em;
+            }
+        }
+    }
+
 }
+
+@include large {
+
+    .main-faq {
+        margin: 6em auto 0em auto;
+        padding-bottom: 8em;
+    
+        &__title {
+            line-height: 1.5em;
+    
+            h2 {
+                font-size: 3em;
+            }
+    
+            .subtitle {
+                font-size: 2em;
+            }
+        }
+    
+        &__questions {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+    
+            .question {
+                font-size: 1.5em;
+            }
+        }
+    }
+    
+}
+
+
+
+
+ /*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+ @include extra-large {
+
+    .main-faq {
+        grid-row-start: 2;
+        background: url("../../assets/images/fond-home.svg");
+        background-size: cover;
+        margin: 5em auto 0em auto;
+        padding-bottom: 6em;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: $c-white;
+        ::selection {
+            background-color: $c-orange-yellow;
+            color: $c-white;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $c-white;
+            opacity: 0.5;
+            z-index: 0;
+          }
+    
+        &__title {
+            display: flex;
+            flex-direction: column;
+            margin: 4em auto;
+            padding: 2em 0em 1em 0em;
+            width: 100%;
+            z-index: 2;
+            align-items: center;
+            background-color: $c-brick;
+            line-height: 2em;
+    
+            h2 {
+                font-family: $f-landing-page;
+                color: $c-black;
+                font-weight: bold;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                font-size: 2em;
+            }
+    
+            .subtitle {
+                color: $c-white;
+                font-family: $f-body;
+                font-size: 1.5em;
+                margin: 1em 0;
+                text-align: center;
+            }
+        }
+    
+        &__questions {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            background-color: $c-white;
+            border-radius: 20px;
+            padding: 4em;
+            box-shadow: 15px 15px 100px $c-shadow;
+            font-family: $f-body;
+            color: $c-black-lighten;
+            font-size: 1.2em;
+            line-height: 1.5rem;
+            margin: auto;
+            text-align: justify;
+            z-index: 2;
+    
+            .question {
+                display: flex;
+                flex-direction: raw;
+                color: $c-ocre-yellow;
+                font-size: 1.2em;
+                margin: 2.5em 0em 1em 0em;
+    
+                i {
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+ }

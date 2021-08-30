@@ -1,7 +1,7 @@
 {
-  "name": "theme-julie-eggen",
+  "name": "julie-eggen",
   "version": "1.0.0",
-  "description": "Julie Eggen's project theme",
+  "description": "Julie Eggen's project",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

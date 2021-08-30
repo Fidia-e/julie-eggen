@@ -1,4 +1,17 @@
-@media screen and (max-width:1199px){
+.footer-dark {
+    background-color: $c-dark-blue;
+}
+
+.footer-light {
+    background-color: $c-white;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Mobile ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include small {
+
     .footer {
         grid-row-start: 3;
         height: 100px;
@@ -11,43 +24,259 @@
     
         &__social {
             display: flex;  
-    
-            h4 {
-                color: $c-brick;
+
+            .title {
                 font-size: 1em;
                 margin: auto;
             }
     
+            .title-light-footer {
+                color: $c-brick;
+            }
+
+            .title-dark-footer {
+                color: $c-orange-yellow;
+            }
+
             .fa-arrow-right {
                 font-size: 1em;
-                margin-right: 1em;
-                margin-left: 0.5em;
+                margin: 0.2em 0.5em 0em 1em;
             }
-            
-            i {
+    
+            .light-footer-fafa {
                 color: $c-brick;
+            }
+
+            .dark-footer-fafa {
+                color: $c-orange-yellow;
+            }
+
+            .link {
                 font-size: 1.2em;
                 align-self: center;
+                margin: 0em 0.2rem;
+            }
+            
+            .link-light-footer {
+                color: $c-brick;
+            }
+
+            .link-dark-footer {
+                color: $c-orange-yellow;
             }
         }
-    
-        p {
+
+        .copyright {
             font-family: $f-body;
-            color: $c-dark-yellow;
             font-size: 1em;
         }
     
-        a {
+        .copyright-light-footer {
+            color: $c-dark-yellow;
+        }
+
+        .copyright-dark-footer {
+            color: $c-ocre-yellow;
+        }
+
+        .legal {
             text-decoration: none;
-            color: $c-dark-blue;
             font-weight: bold;
             margin-right: 0.5em;
             font-size: 1em;
         }
+    
+        .legal-light-footer {
+            color: $c-dark-blue;
+        }
+
+        .legal-dark-footer {
+            color: $c-white;
+        }
     }
 }
 
-@media screen and (min-width:1200px){
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ---------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+ @include medium {
+
+    .footer {
+        grid-row-start: 3;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3em 0em;
+        font-family: $f-landing-page;
+    
+        &__social {
+            display: flex;  
+
+            .title {
+                font-size: 1.5em;
+                margin: auto;
+            }
+    
+            .title-light-footer {
+                color: $c-brick;
+            }
+
+            .title-dark-footer {
+                color: $c-orange-yellow;
+            }
+
+            .fa-arrow-right {
+                font-size: 1.5em;
+                margin: 0.1em 0.5em 0em 1em;
+            }
+    
+            .light-footer-fafa {
+                color: $c-brick;
+            }
+
+            .dark-footer-fafa {
+                color: $c-orange-yellow;
+            }
+
+            .link {
+                font-size: 1.5em;
+                align-self: center;
+                margin: 0em 0.5rem;
+            }
+            
+            .link-light-footer {
+                color: $c-brick;
+            }
+
+            .link-dark-footer {
+                color: $c-orange-yellow;
+            }
+        }
+
+        .copyright {
+            font-family: $f-body;
+            font-size: 1.5em;
+        }
+    
+        .copyright-light-footer {
+            color: $c-dark-yellow;
+        }
+
+        .copyright-dark-footer {
+            color: $c-ocre-yellow;
+        }
+
+        .legal {
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 0.5em;
+            font-size: 1.5em;
+        }
+    
+        .legal-light-footer {
+            color: $c-dark-blue;
+        }
+
+        .legal-dark-footer {
+            color: $c-white;
+        }
+    }
+ }
+
+ @include large {
+    .footer {
+        grid-row-start: 3;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4em 0em;
+        font-family: $f-landing-page;
+    
+        &__social {
+            display: flex;  
+
+            .title {
+                font-size: 2em;
+                margin: auto;
+            }
+    
+            .title-light-footer {
+                color: $c-brick;
+            }
+
+            .title-dark-footer {
+                color: $c-orange-yellow;
+            }
+
+            .fa-arrow-right {
+                font-size: 2em;
+                margin: 0.1em 0.5em 0em 1em;
+            }
+    
+            .light-footer-fafa {
+                color: $c-brick;
+            }
+
+            .dark-footer-fafa {
+                color: $c-orange-yellow;
+            }
+
+            .link {
+                font-size: 2em;
+                align-self: center;
+                margin: 0em 0.5rem;
+            }
+            
+            .link-light-footer {
+                color: $c-brick;
+            }
+
+            .link-dark-footer {
+                color: $c-orange-yellow;
+            }
+        }
+
+        .copyright {
+            font-family: $f-body;
+            font-size: 2em;
+        }
+    
+        .copyright-light-footer {
+            color: $c-dark-yellow;
+        }
+
+        .copyright-dark-footer {
+            color: $c-ocre-yellow;
+        }
+
+        .legal {
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 0.5em;
+            font-size: 2em;
+        }
+    
+        .legal-light-footer {
+            color: $c-dark-blue;
+        }
+
+        .legal-dark-footer {
+            color: $c-white;
+        }
+    }
+ }
+
+
+ /*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include extra-large {
 
     .footer {
         grid-row-start: 3;
@@ -60,43 +289,75 @@
         font-family: $f-landing-page;
     
         &__social {
-            width: 50%;
-            display: flex;
-            flex-direction: raw;
-            flex-wrap: nowrap;
-            justify-content: center;
-    
-            h4 {
-                color: $c-brick;
+            display: flex;  
+
+            .title {
                 font-size: 1.5em;
-                margin-right: 1em;
-                align-self: center;
+                margin: auto;
             }
     
+            .title-light-footer {
+                color: $c-brick;
+            }
+
+            .title-dark-footer {
+                color: $c-orange-yellow;
+            }
+
             .fa-arrow-right {
                 font-size: 1.5em;
-                margin-right: 2em;
+                margin: .2em 0.5em 0em 1em;
+            }
+    
+            .light-footer-fafa {
+                color: $c-brick;
+            }
+
+            .dark-footer-fafa {
+                color: $c-orange-yellow;
+            }
+
+            .link {
+                font-size: 2em;
+                align-self: center;
+                margin: 0em 0.5rem;
             }
             
-            i {
+            .link-light-footer {
                 color: $c-brick;
-                font-size: 2.5em;
-                align-self: center;
+            }
+
+            .link-dark-footer {
+                color: $c-orange-yellow;
             }
         }
-    
-        p {
+
+        .copyright {
             font-family: $f-body;
-            color: $c-dark-yellow;
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
     
-        a {
+        .copyright-light-footer {
+            color: $c-dark-yellow;
+        }
+
+        .copyright-dark-footer {
+            color: $c-ocre-yellow;
+        }
+
+        .legal {
             text-decoration: none;
-            margin: 0 1em;
-            color: $c-dark-blue;
             font-weight: bold;
-            font-size: 1.2em;
+            margin-right: 0.5em;
+            font-size: 1.5em;
+        }
+    
+        .legal-light-footer {
+            color: $c-dark-blue;
+        }
+
+        .legal-dark-footer {
+            color: $c-white;
         }
     }
-} 
+}
