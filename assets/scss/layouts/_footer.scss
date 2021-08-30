@@ -97,7 +97,7 @@
 }
 
 /*----------------------------------------------------------------------------------------------------------
- ---------------------------------------------- Tablette ----------------------------------------------------
+ ---------------------------------------------- Tablette ---------------------------------------------------
  ----------------------------------------------------------------------------------------------------------*/
 
  @include medium {
@@ -289,43 +289,75 @@
         font-family: $f-landing-page;
     
         &__social {
-            width: 50%;
-            display: flex;
-            flex-direction: raw;
-            flex-wrap: nowrap;
-            justify-content: center;
-    
-            h4 {
-                color: $c-brick;
+            display: flex;  
+
+            .title {
                 font-size: 1.5em;
-                margin-right: 1em;
-                align-self: center;
+                margin: auto;
             }
     
+            .title-light-footer {
+                color: $c-brick;
+            }
+
+            .title-dark-footer {
+                color: $c-orange-yellow;
+            }
+
             .fa-arrow-right {
                 font-size: 1.5em;
-                margin-right: 2em;
+                margin: 0em 0.5em 0em 1em;
+            }
+    
+            .light-footer-fafa {
+                color: $c-brick;
+            }
+
+            .dark-footer-fafa {
+                color: $c-orange-yellow;
+            }
+
+            .link {
+                font-size: 1.5em;
+                align-self: center;
+                margin: 0em 0.2rem;
             }
             
-            i {
+            .link-light-footer {
                 color: $c-brick;
-                font-size: 2.5em;
-                align-self: center;
+            }
+
+            .link-dark-footer {
+                color: $c-orange-yellow;
             }
         }
-    
-        p {
+
+        .copyright {
             font-family: $f-body;
-            color: $c-dark-yellow;
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
     
-        a {
+        .copyright-light-footer {
+            color: $c-dark-yellow;
+        }
+
+        .copyright-dark-footer {
+            color: $c-ocre-yellow;
+        }
+
+        .legal {
             text-decoration: none;
-            margin: 0 1em;
-            color: $c-dark-blue;
             font-weight: bold;
-            font-size: 1.2em;
+            margin-right: 0.5em;
+            font-size: 1.5em;
+        }
+    
+        .legal-light-footer {
+            color: $c-dark-blue;
+        }
+
+        .legal-dark-footer {
+            color: $c-white;
         }
     }
 }

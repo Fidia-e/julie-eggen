@@ -1,11 +1,14 @@
-@media screen and (max-width:1199px){
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Mobile ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include small {
 
     .main__email {
         width: 85%;
         background-color: $c-dark-blue;
         border-radius: 20px;
         padding: 2em 1em;
-        // box-shadow: 0px 0px 10px lighten($c-shadow, 50%);
         font-family: $f-body;
         color: $c-white;
         font-size: 1em;
@@ -128,8 +131,111 @@
     }
 }
 
-@media screen and (min-width:1200px){
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include medium {
+    .main__email {
+        font-size: 1.5em;
+        line-height: 1.8rem;
     
+        h1 {
+            font-size: 2em;
+        }
+    
+        .subtitle {
+            font-size: 1.2em;
+        }
+    
+        &--form {
+    
+            h4 {
+                font-size: 1em;
+            }
+    
+            input {
+                font-size: 1em;
+            }
+    
+            .message {
+                font-size: 1em;
+            }
+
+    
+            .form-button {
+    
+                h4 {
+                    font-size: 1rem;
+                }
+    
+                i {
+                    font-size: 1rem;
+                }
+            }
+    
+            .consigne {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+@include large {
+    .main__email {
+        font-size: 1.8em;
+        line-height: 1.8rem;
+    
+        h1 {
+            font-size: 2em;
+        }
+    
+        .subtitle {
+            margin: 1em auto;
+            width: 80%;
+            font-size: 1.2em;
+        }
+    
+        &--form {
+    
+            h4 {
+                font-size: 1em;
+            }
+    
+            input {
+                font-size: 1em;
+            }
+    
+            .message {
+                font-size: 1em;
+            }
+
+    
+            .form-button {
+                width: 15rem;
+    
+                h4 {
+                    font-size: 1.5rem;
+                }
+    
+                i {
+                    font-size: 1.5rem;
+                }
+            }
+    
+            .consigne {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include extra-large {
+
     .main__email {
         width: 45%;
         background-color: $c-dark-blue;
