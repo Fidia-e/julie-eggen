@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 
 // récupération des fichiers sass
-import '../scss/main.scss';
+import '../scss/main';
 
 // récupération des fichiers js
 import './carousel';

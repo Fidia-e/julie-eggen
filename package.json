@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "rellax": "^1.12.1",
     "reset-css": "^5.0.1"
   },
   "devDependencies": {
