@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+
+// import de toutes les feuilles de style
+@import
+    'abstracts/fonts',
+    'abstracts/mixins',
+    'abstracts/variables';
+
+@import 
+    'components/form',
+    'components/navigation',
+    'components/sidebar',
+    'components/social';
+
+@import 
+    'layouts/global',
+    'layouts/header',
+    'layouts/footer';
+
+@import
+    'pages/landing',
+    'pages/home',
+    'pages/at',
+    'pages/seances',
+    'pages/rdv',
+    'pages/parcours',
+    'pages/blog',
+    'pages/faq';
+

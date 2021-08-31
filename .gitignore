@@ -1,8 +1,17 @@
 .cache
 dist
 node_modules
-vendor
-wp
+<<<<<<< HEAD
+/vendor
+/wp
 /wp-config.php
-/wp-content
+/wp-content/*
+!/wp-content/
+/wp-content/themes/*
+!/wp-content/themes/
+!/wp-content/themes/julie-eggen
 /install.md
+
+
+# on met un "/" pour que le chemin commence à la racine (dans le même répertoire que ce fichier .gitinore)
+# si on ne précise pas le / en début de chemin, on ignorera tous les fichiers qui correspondent, et pas seulement ceux situés à la racine
