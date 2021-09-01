@@ -36,18 +36,9 @@
                 <i class="fab fa-facebook-f"></i>
             </a>
         </div>
-        <nav class="header__nav navigation">
-            <div class="close-menu-button"><i class="fas fa-times"></i></div>
-            <ul class="header__nav--links">
-                <li><a class="link active link-light-nav" href="javascript:void(0)">Accueil</a></li>
-                <li><a class="link link-light-nav" href="javascript:void(0)">Analyse Transactionnelle</a></li>
-                <li><a class="link link-light-nav" href="javascript:void(0)">Séances</a></li>
-                <li><a class="link link-light-nav" href="javascript:void(0)">Prendre RDV</a></li>
-                <li><a class="link link-light-nav" href="javascript:void(0)">Parcours</a></li>
-                <li><a class="link link-light-nav" href="javascript:void(0)">Blog</a></li>
-                <li><a class="link link-light-nav" href="javascript:void(0)">FAQ</a></li>
-            </ul>
-        </nav>
+        <?php
+            get_template_part('template-parts/header-menu');
+        ?>
     </header>
     <main class="main">
         <section class="main__presentation">

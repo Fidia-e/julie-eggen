@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julie Eggen</title>
     <link rel="shortcut icon" href="../assets/images/favicon.ico"/>
+    <script src="../assets/js/main.js"></script>
+    <title>Julie Eggen</title>
     <?php wp_head(); ?>
 </head>
 <body>
@@ -37,7 +38,6 @@
             </a>
         </div>
     </main>
-    <script src="../assets/js/main.js"></script>
     <?php wp_footer(); ?>
 </body>
 </html>
