@@ -22,6 +22,7 @@
     "require": {
         "johnpbloch/wordpress": "^5.8",
         "wpackagist-theme/twentytwenty": "^1.8",
-        "wpackagist-plugin/akismet": "^4.1"
+        "wpackagist-plugin/akismet": "^4.1",
+        "wpackagist-plugin/query-monitor": "^3.7"
     }
 }
