@@ -21,14 +21,14 @@
                 <div class="cercle" id="cercle3"></div>
             </div>
             <div class="container__hero--picture">
-                <img src="../assets/images/welcome-pic.jpg" alt="">
+                <img src="./assets/images/welcome-pic.jpg" alt="">
             </div>
             <div class="container__hero--subtitle">
                 <h2>Psychothérapie <br><br> Analyse transactionnelle </h2>
             </div>
         </div>
         <div class="container__gif">
-            <img src="../assets/images/welcome-gif.gif" alt="signature-gif">
+            <img src="./assets/images/welcome-gif.gif" alt="signature-gif">
         </div>
         <div class="container__button">
             <a class="container__button--button" href="<?= home_url( '/home' ); ?>">

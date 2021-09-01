@@ -18,7 +18,7 @@ Template Name: Parcours
 <body>
     <header class="header header-dark">
         <div class="header__logo">
-            <a class="header__logo--logo" href="javascript:void(0)">
+            <a class="header__logo--logo" href="<?= home_url( '/home' ); ?>">
                 <img src="../../assets/images/logo-light.png" alt="logo__text"/>
                 <h1 class="title-dark-header">Julie Eggen</h1>
             </a>

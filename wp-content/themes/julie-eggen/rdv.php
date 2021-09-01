@@ -18,7 +18,7 @@ Template Name: RDV
 <body>
     <header class="header header-dark">
         <div class="header__logo">
-            <a class="header__logo--logo" href="javascript:void(0)">
+            <a class="header__logo--logo" href="<?= home_url( '/home' ); ?>">
                 <img src="../../assets/images/logo-light.png" alt="logo__text"/>
                 <h1 class="title-dark-header">Julie Eggen</h1>
             </a>
@@ -73,7 +73,7 @@ Template Name: RDV
             <hr class="bottom-line">
             <p>Si vous décidez d'entreprendre une thérapie, nous établissons ensemble la liste de vos besoins et de vos attentes.</p>
             <p>Puis nous convenons d'un rendez-vous, en fonction.</p>
-            <img class="img-agenda" src="../assets/images/agenda.png" alt="plan-rdv">
+            <img class="img-agenda" src="../../assets/images/agenda.png" alt="plan-rdv">
         </div>
         <div class="main-consultations__text main-consultations__text--consult">
             <h3>Consultation</h3>
