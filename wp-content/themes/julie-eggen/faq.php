@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: FAQ
+*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +19,7 @@
     <header class="header header-dark">
         <div class="header__logo">
             <a class="header__logo--logo" href="javascript:void(0)">
-                <img src="../assets/images/logo-light.png" alt="logo__text"/>
+                <img src="../../assets/images/logo-light.png" alt="logo__text"/>
                 <h1 class="title-dark-header">Julie Eggen</h1>
             </a>
         </div>
@@ -39,13 +45,13 @@
         <nav class="header__nav navigation">
             <div class="close-menu-button"><i class="fas fa-times"></i></div>
             <ul class="header__nav--links">
-                <li><a class="link active link-dark-nav" href="javascript:void(0)">Accueil</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">Analyse Transactionnelle</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">Séances</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">Prendre RDV</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">Parcours</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">Blog</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">FAQ</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/home/')); ?>">Accueil</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/analyse-transactionnelle/')); ?>">Analyse Transactionnelle</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/seances/')); ?>">Séances</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/prendre-rdv/')); ?>">Prendre RDV</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/parcours/')); ?>">Parcours</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/blog/')); ?>">Blog</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/faq/')); ?>">FAQ</a></li>
             </ul>
         </nav>
     </header>

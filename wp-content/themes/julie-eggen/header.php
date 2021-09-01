@@ -13,7 +13,7 @@
     <header class="header header-light">
         <div class="header__logo">
             <a class="header__logo--logo" href="<?= home_url( '/home' ); ?>">
-                <img src="../assets/images/logo-dark.png" alt="logo__text"/>
+                <img src="../../assets/images/logo-dark.png" alt="logo__text"/>
                 <h1 class="title-light-header">Julie Eggen</h1>
             </a>
         </div>

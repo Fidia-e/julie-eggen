@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Seances
+*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +19,7 @@
     <header class="header header-dark">
         <div class="header__logo">
             <a class="header__logo--logo" href="javascript:void(0)">
-                <img src="../assets/images/logo-light.png" alt="logo__text"/>
+                <img src="../../assets/images/logo-light.png" alt="logo__text"/>
                 <h1 class="title-dark-header">Julie Eggen</h1>
             </a>
         </div>
@@ -39,13 +45,13 @@
         <nav class="header__nav navigation">
             <div class="close-menu-button"><i class="fas fa-times"></i></div>
             <ul class="header__nav--links">
-                <li><a class="link active link-dark-nav" href="javascript:void(0)">Accueil</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">Analyse Transactionnelle</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">Séances</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">Prendre RDV</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">Parcours</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">Blog</a></li>
-                <li><a class="link link-dark-nav" href="javascript:void(0)">FAQ</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/home/')); ?>">Accueil</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/analyse-transactionnelle/')); ?>">Analyse Transactionnelle</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/seances/')); ?>">Séances</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/prendre-rdv/')); ?>">Prendre RDV</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/parcours/')); ?>">Parcours</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/blog/')); ?>">Blog</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/faq/')); ?>">FAQ</a></li>
             </ul>
         </nav>
     </header>
@@ -61,7 +67,7 @@
             <p>
             Calvenusse de tabarnouche de mausus de cârosse de patente à gosse. Il va manger un esti de char de marde tu vas vouère. Lâche pas la patate, enwoye, tu rentres la gogosse dans la slot pis ça va le faire. Baptême de crisse de cibole de viande à chien, j'en ai plein mon casse d'être toute décalissé de la vie, avec le windshier de mon char toute déviargé par l'autre esti de cave. Toryeu que c'est cheap cette esti de cochonnerie-là. J'ai ben d'la misère avec les colons en bedaine.
             </p>
-            <img src="../assets/images/seances.png" alt="at-img">
+            <img src="../../assets/images/seances.png" alt="at-img">
         </div>
     </main>
     <footer class="footer footer-dark">
