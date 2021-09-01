@@ -10,10 +10,17 @@
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "browserslist": "^4.16.8",
     "rellax": "^1.12.1",
     "reset-css": "^5.0.1"
   },
   "devDependencies": {
+    "cssnano": "^4.1.11",
     "sass": "^1.34.1"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ]
 }
