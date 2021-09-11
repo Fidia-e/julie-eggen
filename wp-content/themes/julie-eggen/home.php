@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/favicon.ico"/>
     <script src="../assets/js/main.js"></script>
-    <title>Julie Eggen</title>
+    <title>Julie Eggenspieler</title>
     <?php wp_head(); ?>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div class="header__logo">
             <a class="header__logo--logo" href="<?= home_url( '/home' ); ?>">
                 <img src="../assets/images/logo-dark.png" alt="logo__text"/>
-                <h1 class="title-light-header">Julie Eggen</h1>
+                <h1 class="title-light-header">Julie Eggenspieler</h1>
             </a>
         </div>
         <a class="menu-burger-button" href="javascript:void(0)"><i class="fas fa-bars burger"></i></a>

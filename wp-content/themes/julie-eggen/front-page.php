@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/favicon.ico"/>
     <script src="../assets/js/main.js"></script>
-    <title>Julie Eggen</title>
+    <title>Julie Eggenspieler</title>
     <?php wp_head(); ?>
 </head>
 <body>
@@ -31,7 +31,7 @@
             <img src="./assets/images/welcome-gif.gif" alt="signature-gif">
         </div>
         <div class="container__button">
-            <a class="container__button--button" href="<?= home_url( '/home' ); ?>">
+            <a class="container__button--button" href="<?= home_url( '/accueil' ); ?>">
                 <input type="button">
                 <h3>Bienvenue</h3>
                 <i class="fas fa-arrow-right"></i>

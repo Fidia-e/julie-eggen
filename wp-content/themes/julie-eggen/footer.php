@@ -1,4 +1,4 @@
-<footer class="footer footer-light">
+    <footer class="footer footer-light">
         <a class="legal legal-light-footer" href="javascript:void(0)">Mentions légales</a>
         <div class="footer__social">
             <h4 class="title title-light-footer">Retrouvez-moi</h4>
@@ -10,6 +10,6 @@
         </div>
         <p class="copyright copyright-light-footer">&copy;&nbsp;2021&nbsp;Julie&nbsp;Eggen</p>
     </footer>
-<?php wp_footer(); ?>
+    <?php wp_footer(); ?>
 </body>
 </html>
