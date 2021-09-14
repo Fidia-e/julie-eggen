@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/images/favicon.ico"/>
-    <script src="../assets/js/main.js"></script>
-    <title>Julie Eggenspieler</title>
+    <link rel="shortcut icon" href="../wp-content/themes/julie-eggen/assets/images/favicon.ico"/>
+    <script src="../wp-content/themes/julie-eggen/assets/js/main.js"></script>
+    <title>Julie Eggen</title>
     <?php wp_head(); ?>
 </head>
 <body>
     <header class="header header-light">
         <div class="header__logo">
-            <a class="header__logo--logo" href="<?= home_url( '/home' ); ?>">
-                <img src="../assets/images/logo-dark.png" alt="logo__text"/>
-                <h1 class="title-light-header">Julie Eggenspieler</h1>
+            <a class="header__logo--logo" href="<?= home_url( '/accueil' ); ?>">
+                <img src="../wp-content/themes/julie-eggen/assets/images/logo-dark.png" alt="logo__text"/>
+                <h1 class="title-light-header">Julie Eggen</h1>
             </a>
         </div>
         <a class="menu-burger-button" href="javascript:void(0)"><i class="fas fa-bars burger"></i></a>
@@ -65,7 +65,7 @@
             </div>
             <div class="main__presentation--profil box-shadow">
                 <div class="main__presentation--profil--picture">
-                    <img src="../assets/images/julie-profil.jpg" alt="photo-de-profil">
+                    <img src="../wp-content/themes/julie-eggen/assets/images/julie-profil.jpg" alt="photo-de-profil">
                 </div>
                 <div class="main__presentation--profil--description">
                     <h1>Julie Eggenspieler</h1>
@@ -118,7 +118,7 @@
                 <br><br>
                 Baptême de crisse de cibole de viande à chien, j'en ai plein mon casse d'être toute décalissé de la vie, avec le windshier de mon char toute déviargé par l'autre esti de cave. Mâ t'en faire moé des patentes de même, tu vas m'entendre baptinse. Toryeu que c'est cheap cette esti de cochonnerie-là. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis. Il va manger un esti de char de marde tu vas vouère. Je crisse mon camp d'icite anyway, je déguedine au plus sacrant, ça sent la cibole de marde.
             </p>
-            <img src="../assets/images/therapie.png" alt="therapie consult illustration">
+            <img src="../wp-content/themes/julie-eggen/assets/images/therapie.png" alt="therapie consult illustration">
         </section>
         <section class="main__testimonials">
             <div class="main__testimonials--title">

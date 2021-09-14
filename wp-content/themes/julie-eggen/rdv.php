@@ -10,16 +10,16 @@ Template Name: RDV
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/images/favicon.ico"/>
-    <script src="../assets/js/main.js"></script>
+    <link rel="shortcut icon" href="../../wp-content/themes/julie-eggen/assets/images/favicon.ico"/>
+    <script src="../../wp-content/themes/julie-eggen/assets/js/main.js"></script>
     <title>Julie Eggenspieler</title>
     <?php wp_head(); ?>
 </head>
 <body>
     <header class="header header-dark">
         <div class="header__logo">
-            <a class="header__logo--logo" href="<?= home_url( '/home' ); ?>">
-                <img src="../../assets/images/logo-light.png" alt="logo__text"/>
+            <a class="header__logo--logo" href="<?= home_url( '/accueil' ); ?>">
+                <img src="../../wp-content/themes/julie-eggen/assets/images/logo-light.png" alt="logo__text"/>
                 <h1 class="title-dark-header">Julie Eggenspieler</h1>
             </a>
         </div>
@@ -45,7 +45,7 @@ Template Name: RDV
         <nav class="header__nav navigation">
             <div class="close-menu-button"><i class="fas fa-times"></i></div>
             <ul class="header__nav--links">
-                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/home/')); ?>">Accueil</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/accueil/')); ?>">Accueil</a></li>
                 <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/analyse-transactionnelle/')); ?>">Analyse Transactionnelle</a></li>
                 <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/seances/')); ?>">Séances</a></li>
                 <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/prendre-rdv/')); ?>">Prendre RDV</a></li>
@@ -66,14 +66,14 @@ Template Name: RDV
             <p><span>julie.eggen@gmail.com</span></p>
             <br>
             <p>Je me ferai un plaisir de répondre à vos questions.</p>
-            <img src="../../assets/images/contact.png" alt="plan-rdv">
+            <img src="../../wp-content/themes/julie-eggen/assets/images/contact.png" alt="plan-rdv">
         </div>
         <div class="main-consultations__text main-consultations__text--agenda">
             <h3>Fixer un rendez-vous</h3>
             <hr class="bottom-line">
             <p>Si vous décidez d'entreprendre une thérapie, nous établissons ensemble la liste de vos besoins et de vos attentes.</p>
             <p>Puis nous convenons d'un rendez-vous, en fonction.</p>
-            <img class="img-agenda" src="../../assets/images/agenda.png" alt="plan-rdv">
+            <img class="img-agenda" src="../../wp-content/themes/julie-eggen/assets/images/agenda.png" alt="plan-rdv">
         </div>
         <div class="main-consultations__text main-consultations__text--consult">
             <h3>Consultation</h3>
@@ -83,7 +83,7 @@ Template Name: RDV
             <br>
             <p>ou bien, si nos conditions le permettent, à l'adresse suivante :</p>
             <p><span class="address-span">111, rue du Grand Cerf 57000 Metz</span></p>
-            <img class="img-map" src="../../assets/images/map.png" alt="plan-rdv">
+            <img class="img-map" src="../../wp-content/themes/julie-eggen/assets/images/map.png" alt="plan-rdv">
         </div>
     </main>
     <footer class="footer footer-dark">

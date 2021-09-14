@@ -10,16 +10,16 @@ Template Name: Seances
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/images/favicon.ico"/>
-    <script src="../assets/js/main.js"></script>
+    <link rel="shortcut icon" href="../../wp-content/themes/julie-eggen/assets/images/favicon.ico"/>
+    <script src="../../wp-content/themes/julie-eggen/assets/js/main.js"></script>
     <title>Julie Eggenspieler</title>
     <?php wp_head(); ?>
 </head>
 <body>
     <header class="header header-dark">
         <div class="header__logo">
-            <a class="header__logo--logo" href="<?= home_url( '/home' ); ?>">
-                <img src="../../assets/images/logo-light.png" alt="logo__text"/>
+            <a class="header__logo--logo" href="<?= home_url( '/accueil' ); ?>">
+                <img src="../../wp-content/themes/julie-eggen/assets/images/logo-light.png" alt="logo__text"/>
                 <h1 class="title-dark-header">Julie Eggenspieler</h1>
             </a>
         </div>
@@ -45,7 +45,7 @@ Template Name: Seances
         <nav class="header__nav navigation">
             <div class="close-menu-button"><i class="fas fa-times"></i></div>
             <ul class="header__nav--links">
-                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/home/')); ?>">Accueil</a></li>
+                <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/accueil/')); ?>">Accueil</a></li>
                 <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/analyse-transactionnelle/')); ?>">Analyse Transactionnelle</a></li>
                 <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/seances/')); ?>">Séances</a></li>
                 <li><a class="link link-dark-nav" href="<?= esc_url(home_url('/prendre-rdv/')); ?>">Prendre RDV</a></li>
@@ -67,7 +67,7 @@ Template Name: Seances
             <p>
             Calvenusse de tabarnouche de mausus de cârosse de patente à gosse. Il va manger un esti de char de marde tu vas vouère. Lâche pas la patate, enwoye, tu rentres la gogosse dans la slot pis ça va le faire. Baptême de crisse de cibole de viande à chien, j'en ai plein mon casse d'être toute décalissé de la vie, avec le windshier de mon char toute déviargé par l'autre esti de cave. Toryeu que c'est cheap cette esti de cochonnerie-là. J'ai ben d'la misère avec les colons en bedaine.
             </p>
-            <img src="../../assets/images/seances.png" alt="at-img">
+            <img src="../../wp-content/themes/julie-eggen/assets/images/seances.png" alt="at-img">
         </div>
     </main>
     <footer class="footer footer-dark">

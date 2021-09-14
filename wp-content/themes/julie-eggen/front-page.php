@@ -12,7 +12,7 @@
 <body>
     <main class="container">
         <div class="container__title">
-            <h1>Julie Eggen</h1>
+            <h1>Julie Eggenspieler</h1>
         </div>
         <div class="container__hero">
             <div class="container__hero--logo">
