@@ -88,6 +88,7 @@
                         color: $c-dark-yellow;
                         font-family: $f-body-thin;
                         font-size: 1.2em;
+                        font-weight: bold;
                         margin-top: 1em;
                         margin-bottom: 2rem;
                         text-align: initial;
@@ -321,7 +322,7 @@
 
 @include medium {
     .main {
-        margin-top: 4em;
+        margin-top: 6em;
      
         &__presentation {
     
@@ -349,6 +350,7 @@
                     .subtitle {
                         font-size: 1.5em;
                         line-height: 1.8rem;
+                        font-weight: bold;
                     }
                 }
             }
@@ -366,6 +368,7 @@
 
             .subtitle {
                 font-size: 1.5em;
+                line-height: 1.9rem;
             }
         }
 
@@ -435,7 +438,7 @@
 
 @include large {
     .main {
-        margin-top: 6em;
+        margin-top: 8em;
      
         &__presentation {
     
@@ -463,6 +466,7 @@
                     .subtitle {
                         font-size: 1.5em;
                         line-height: 1.8rem;
+                        font-weight: bold;
                     }
                 }
             }
@@ -480,6 +484,7 @@
 
             .subtitle {
                 font-size: 1.5em;
+                line-height: 1.9rem;
             }
         }
 
@@ -631,11 +636,7 @@
                         color: $c-dark-blue;
                         font-weight: bold;
                         font-size: 2.5em;
-        
-                        &::selection {
-                            background-color: $c-orange-yellow;
-                            color: $c-white;
-                        }
+    
                     }
         
                     .subtitle {
@@ -644,16 +645,7 @@
                         font-size: 1em;
                         margin-top: 1em;
                         margin-bottom: 2rem;
-        
-                        &::selection {
-                            background-color: $c-orange-yellow;
-                            color: $c-white;
-                        }
-                    }
-        
-                    p::selection {
-                        background-color: $c-orange-yellow;
-                        color: $c-white;
+                        font-weight: bold;
                     }
                 }
             }

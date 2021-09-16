@@ -35,7 +35,7 @@
             color: $c-dark-blue;
             position: absolute;
             text-decoration: none;
-            top: 0.3em;
+            top: 0.4em;
             right: .7em;
         }
 
@@ -45,7 +45,7 @@
 
         &__logo {
             display: flex;
-            width: 50%;
+            width: 80%;
     
             &--logo {
                 display: flex;
@@ -53,7 +53,7 @@
                 text-decoration: none;
     
                 img {
-                    width: 20%;
+                    width: 15%;
                 }
     
                 h1 {
@@ -63,7 +63,7 @@
                     font-family: $f-landing-page;
                     color: $c-dark-blue;
                     font-weight: bold;
-                    font-size: 1em;
+                    font-size: 1rem;
                     margin-left: 0.5rem;
                 }
 
@@ -109,7 +109,7 @@
     .header {
 
         h1 {
-            font-size: 2.2em;
+            font-size: 2.3rem;
         } 
 
         .menu-burger-button {
@@ -291,13 +291,17 @@
     
                 .link {
                     text-decoration: none;
-                    margin: 0em 1em;
+                    margin: 0em .5em;
                     padding: 0.1em;
                     font-family: $f-landing-page;
                     text-transform: uppercase;
                     font-weight: bold;
                     font-size: 1.1em;
                     position: relative;
+
+                    &:last-child {
+                        margin-right: 1rem;
+                    }
                 }
 
                 .link-dark-nav {
