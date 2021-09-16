@@ -6,7 +6,7 @@
             <a class="link link-light-footer link-phone" href="javascript:void(0)"><i class="fas fa-phone-alt"></i></a>
             <a class="link link-light-footer link-email" href="javascript:void(0)"><i class="far fa-envelope"></i></a>
             <a class="link link-light-footer link-instagram" href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
-            <a class="link link-light-footer link-facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+            <a class="link link-light-footer link-facebook" href="https://www.facebook.com/juliepsy11"><i class="fab fa-facebook-f"></i></a>
         </div>
         <p class="copyright copyright-light-footer">&copy;&nbsp;2021&nbsp;Julie&nbsp;Eggen</p>
     </footer>

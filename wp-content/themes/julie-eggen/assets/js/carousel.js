@@ -51,7 +51,7 @@ const appCarousel = {
         }
 
         // on crée un nouveau timer de défilement auto
-        appCarousel.autoScrollTimer = setInterval(appCarousel.displayNextSlide, 5000);
+        appCarousel.autoScrollTimer = setInterval(appCarousel.displayNextSlide, 10000);
     },
 
 

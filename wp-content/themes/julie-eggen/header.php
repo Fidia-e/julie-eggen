@@ -32,7 +32,7 @@
             <a class="link link-instagram link-light-header" href="javascript:void(0)">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a class="link link-facebook link-light-header" href="javascript:void(0)">
+            <a class="link link-facebook link-light-header" href="https://www.facebook.com/juliepsy11">
                 <i class="fab fa-facebook-f"></i>
             </a>
         </div>

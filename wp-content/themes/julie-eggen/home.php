@@ -32,7 +32,7 @@
             <a class="link link-instagram link-light-header" href="javascript:void(0)">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a class="link link-facebook link-light-header" href="javascript:void(0)">
+            <a class="link link-facebook link-light-header" href="https://www.facebook.com/juliepsy11">
                 <i class="fab fa-facebook-f"></i>
             </a>
         </div>
@@ -40,6 +40,7 @@
             get_template_part('template-parts/header-menu');
         ?>
     </header>
+
     <main class="main">
         <section class="main__presentation">
             <div class="main__presentation--articles box-shadow">
@@ -78,6 +79,7 @@
                 </div>
             </div>
         </section>
+
         <section class="main__services box-shadow">
             <h1>Prises en charges</h1>
             <p class="subtitle">Qu'est-ce que l'analyse transactionnelle ?</p>
@@ -103,6 +105,7 @@
                 Baptême de crisse de cibole de viande à chien, j'en ai plein mon casse d'être toute décalissé de la vie, avec le windshier de mon char toute déviargé par l'autre esti de cave. Mâ t'en faire moé des patentes de même, tu vas m'entendre baptinse. Toryeu que c'est cheap cette esti de cochonnerie-là. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis. Il va manger un esti de char de marde tu vas vouère. Je crisse mon camp d'icite anyway, je déguedine au plus sacrant, ça sent la cibole de marde.
             </p>
         </section>
+
         <section class="main__consultations box-shadow">
             <h1>Consultations</h1>
             <p class="subtitle">Comment ça se passe ?</p>
@@ -120,46 +123,83 @@
             </p>
             <img src="../wp-content/themes/julie-eggen/assets/images/therapie.png" alt="therapie consult illustration">
         </section>
+
         <section class="main__testimonials">
             <div class="main__testimonials--title">
                 <h1>Témoignages</h1>
                 <p class="subtitle">Ils m'ont fait confiance</p>
             </div>
             <div class="main__testimonials--content carousel">
-                <div class="main__testimonials--content--testimonial carousel--item box-shadow" data-number="0">
-                    <div class="testimonial--author">
-                        <h4>Pierre &nbsp; <span>50 ans </span> </h4>
+                <div class="main__testimonials--container carousel--item" data-number="0">
+                    <div class="testimonial">
+                        <div class="testimonial--author">
+                            <h4>Pierre &nbsp; <span>50 ans </span> </h4>
+                        </div>
+                        <p class="txt">
+                            J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
+                            Toryeu que c'est cheap cette esti de cochonnerie-là. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis. Il va manger un esti de char de marde tu vas vouère. Je crisse mon camp d'icite anyway, je déguedine au plus sacrant, ça sent la cibole de marde.
+                            J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
+                        </p>
                     </div>
-                    <p class="txt">
-                        J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
-                        Toryeu que c'est cheap cette esti de cochonnerie-là. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis. Il va manger un esti de char de marde tu vas vouère. Je crisse mon camp d'icite anyway, je déguedine au plus sacrant, ça sent la cibole de marde.
-                    </p>
                 </div>
-                <div class="main__testimonials--content--testimonial carousel--item box-shadow" data-number="1">
-                    <div class="testimonial--author">
-                        <h4>Paul &nbsp; <span>26 ans</span> </h4>
+                <div class="main__testimonials--container carousel--item" data-number="1">
+                    <div class="testimonial">
+                        <div class="testimonial--author">
+                            <h4>Paul &nbsp; <span>26 ans</span> </h4>
+                        </div>
+                        <p class="txt">
+                            J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
+                            Toryeu que c'est cheap cette esti de cochonnerie-là. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis. Il va manger un esti de char de marde tu vas vouère. Je crisse mon camp d'icite anyway, je déguedine au plus sacrant, ça sent la cibole de marde.
+                            J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
+                        </p>
                     </div>
-                    <p class="txt">
-                        J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
-                        Toryeu que c'est cheap cette esti de cochonnerie-là. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis. Il va manger un esti de char de marde tu vas vouère. Je crisse mon camp d'icite anyway, je déguedine au plus sacrant, ça sent la cibole de marde.
-                    </p>
                 </div>
-                <div class="main__testimonials--content--testimonial carousel--item box-shadow" data-number="2">
-                    <div class="testimonial--author">
-                        <h4>Jacques &nbsp; <span>non renseigné</span></h4>
+                <div class="main__testimonials--container carousel--item" data-number="2">
+                    <div class="testimonial">
+                        <div class="testimonial--author">
+                            <h4>Jacques &nbsp; <span>non renseigné</span></h4>
+                        </div>
+                        <p class="txt">
+                            J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
+                            Toryeu que c'est cheap cette esti de cochonnerie-là. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis. Il va manger un esti de char de marde tu vas vouère. Je crisse mon camp d'icite anyway, je déguedine au plus sacrant, ça sent la cibole de marde.
+                            J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
+                        </p>
                     </div>
-                    <p class="txt">
-                        J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
-                        Toryeu que c'est cheap cette esti de cochonnerie-là. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis. Il va manger un esti de char de marde tu vas vouère. Je crisse mon camp d'icite anyway, je déguedine au plus sacrant, ça sent la cibole de marde.
-                    </p>
+                </div>
+                <div class="main__testimonials--container carousel--item" data-number="3">
+                    <div class="testimonial">
+                        <div class="testimonial--author">
+                            <h4>Pierrette &nbsp; <span>84 ans</span></h4>
+                        </div>
+                        <p class="txt">
+                            J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
+                            Toryeu que c'est cheap cette esti de cochonnerie-là. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis. Il va manger un esti de char de marde tu vas vouère. Je crisse mon camp d'icite anyway, je déguedine au plus sacrant, ça sent la cibole de marde.
+                            J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
+                        </p>
+                    </div>
+                </div>
+                <div class="main__testimonials--container carousel--item" data-number="4">
+                    <div class="testimonial">
+                        <div class="testimonial--author">
+                            <h4>Jacquouille &nbsp; <span>56 ans</span></h4>
+                        </div>
+                        <p class="txt">
+                            J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
+                            Toryeu que c'est cheap cette esti de cochonnerie-là. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis. Il va manger un esti de char de marde tu vas vouère. Je crisse mon camp d'icite anyway, je déguedine au plus sacrant, ça sent la cibole de marde.
+                            J'ai ben d'la misère avec les colons en bedaine. Osti qui fa frette. Ya 'ien qu'une affaire qui me démange, c'est de le pogner par les dessours de bras pis de le câlicer au travers du châssis.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="main__testimonials--numbers">
                 <div class="number box-shadow" data-slide-number="0"></div>
                 <div class="number box-shadow" data-slide-number="1"></div>
                 <div class="number box-shadow" data-slide-number="2"></div>
+                <div class="number box-shadow" data-slide-number="3"></div>
+                <div class="number box-shadow" data-slide-number="4"></div>
             </div>
         </section>
+
         <section class="main__email box-shadow">  
             <h1>M'écrire</h1>
             <p class="subtitle">Vous avez une question? Ou vous souhaitez prendre rdv ?</p>

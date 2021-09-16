@@ -8,7 +8,7 @@
     .main {
         grid-row-start: 2;
         background: url("../../assets/images/fond-home.svg");
-        background-size: cover;
+        background-size: 100%;
         width: 100%;
         margin-top: 2em;
         display: flex;
@@ -241,7 +241,7 @@
                 scroll-behavior: smooth;
                 margin: auto;
 
-                    &--testimonial {
+                    .carousel--item {
                         display: flex;
                         flex: {
                             direction: column;
@@ -251,39 +251,50 @@
                             family: $f-body;
                             size: 1em;
                         }
-                        width: 95%;
-                        background-color: $c-white;
-                        border-radius: 20px;
-                        color: $c-black-lighten;
-                        line-height: 1.3rem;
-                        margin: 1em .6rem;
+                        width: 100%;
+                        border: none;
+                        background: transparent;
 
-                        .testimonial--author {
-                            align-self: center;
-                            width: 90%;
+                        .testimonial {
+                            width: 95%;
+                            background-color: $c-white;
+                            border-radius: 20px;
+                            color: $c-black-lighten;
+                            line-height: 1.3rem;
+                            margin: 1em auto;
+                            box-shadow: 0px 0px 10px $c-shadow;
 
-                            h4 {
-                                font-family: $f-body-medium;
-                                color: $c-ocre-yellow;
-                                font-size: 1em;
-                                align-self: flex-start;
-                                margin: 1em .5em;
+
+                            &--author {
+                                width: 90%;
+                                display: flex;
+                                margin: auto;
     
-                                span {
-                                    font: {
-                                        family: $f-body-thin;
-                                        size: 0.8em;
+                                h4 {
+                                    font-family: $f-body-medium;
+                                    color: $c-ocre-yellow;
+                                    font-size: 1em;
+                                    align-self: flex-start;
+                                    margin: 1em .5em;
+        
+                                    span {
+                                        font: {
+                                            family: $f-body-thin;
+                                            size: 0.8em;
+                                        }
+                                        color: $c-dark-blue;
                                     }
-                                    color: $c-dark-blue;
                                 }
+                            }
+    
+                            .txt {
+                                display: flex;
+                                margin: auto;
+                                max-width: 85%;
+                                margin-bottom: 1em;
                             }
                         }
 
-                        .txt {
-                            max-width: 85%;
-                            align-self: center;
-                            margin-bottom: 1em;
-                        }
                     }
             }
 
@@ -294,11 +305,11 @@
                     wrap: nowrap;
                 }
                 justify-content: center;
-                width: 100%;
+                width: 80%;
                 margin: auto;
 
                     .number {
-                        width: 15%;
+                        width: 10%;
                         height: 1em;
                         cursor: pointer;
                         background-color: transparent;
@@ -404,7 +415,7 @@
 
             &--content {
 
-                    &--testimonial {
+                    .carousel--item {
                         display: flex;
                         flex: {
                             direction: column;
@@ -414,6 +425,16 @@
                         width: 100%;
                         line-height: 1.8rem;
                         margin: 1em 0rem;
+
+                        .testimonial {
+                            width: 95%;
+                            background-color: $c-white;
+                            border-radius: 20px;
+                            color: $c-black-lighten;
+                            line-height: 1.3rem;
+                            margin: 1em auto;
+                            box-shadow: 0px 0px 10px $c-shadow;
+                        }
 
                         .testimonial--author {
 
@@ -520,7 +541,7 @@
 
             &--content {
 
-                    &--testimonial {
+                    .carousel--item {
                         display: flex;
                         flex: {
                             direction: column;
@@ -530,6 +551,16 @@
                         width: 100%;
                         line-height: 1.8rem;
                         margin: 1em 0rem;
+                        
+                        .testimonial {
+                            width: 95%;
+                            background-color: $c-white;
+                            border-radius: 20px;
+                            color: $c-black-lighten;
+                            line-height: 1.3rem;
+                            margin: 1em auto;
+                            box-shadow: 0px 0px 10px $c-shadow;
+                        }
 
                         .testimonial--author {
 
@@ -728,89 +759,133 @@
 
          /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
 
-        &__testimonials {
+         &__testimonials {
             display: flex;
             flex-direction: column;
-            margin: 10em auto;
+            margin: 0em auto 2em auto;
+            padding-bottom: 1em;
             text-align: justify;
             z-index: 2;
 
             &--title {
                 background-color: $c-brick;
-                padding: 2em 0em 1em 0em;
+                padding: 1em 0em 0em 0em;
+
+
+                h1 {
+                    font: {
+                        family: $f-landing-page;
+                        weight: bold;
+                        size: 1.5em;
+                    }
+                    text-transform: uppercase;
+                    color: $c-black;
+                    text-align: center;
+                }
+
+                .subtitle {
+                    color: $c-white;
+                    font: {
+                        family: $f-body;
+                        size: 1.2em;
+                    }
+                    margin: 1em 0;
+                    text-align: center;
+                }
             }
 
-            h1 {
-                text-transform: uppercase;
-                font-family: $f-landing-page;
-                color: $c-black;
-                font-weight: bold;
-                font-size: 2.5em;
-                text-align: center;
-            }
 
-            .subtitle {
-                color: $c-white;
-                font-family: $f-body;
-                font-size: 1.5em;
-                margin: 1em 0;
-                text-align: center;
-            }
 
             &--content {
                 display: flex;
-                flex-direction: raw;
-                flex-wrap: nowrap;
-                justify-content: space-around;
-                width: 95%;
+                flex: {
+                    direction: row;
+                    wrap: nowrap;
+                }
+                overflow: hidden;
+                scroll-behavior: smooth;
                 margin: auto;
 
-                    &--testimonial {
-                        width: 35%;
-                        background-color: $c-white;
-                        border-radius: 20px;
-                        padding: 4em;
-                        font-family: $f-body;
-                        color: $c-black-lighten;
-                        font-size: 1.2em;
-                        line-height: 1.5rem;
-                        margin: 1.5em 1em;
+                    .carousel--item {
+                        display: flex;
+                        flex: {
+                            direction: column;
+                            shrink: 0;
+                        }
+                        font: {
+                            family: $f-body;
+                            size: 1em;
+                        }
+                        width: 100%;
+                        border: none;
+                        background: transparent;
 
-                        h4 {
-                            font-family: $f-body-medium;
-                            color: $c-ocre-yellow;
-                            font-size: 1.5em;
-                            margin-bottom: 1em;
+                        .testimonial {
+                            width: 75%;
+                            background-color: $c-white;
+                            border-radius: 20px;
+                            color: $c-black-lighten;
+                            line-height: 1.3rem;
+                            margin: 1em auto;
+                            box-shadow: 0px 0px 10px $c-shadow;
 
-                            span {
-                                font-family: $f-body-thin;
-                                color: $c-dark-blue;
-                                font-size: 0.8em;
+                            &--author {
+                                width: 90%;
+                                display: flex;
+                                margin: auto;
+    
+                                h4 {
+                                    font-family: $f-body-medium;
+                                    color: $c-ocre-yellow;
+                                    font-size: 1em;
+                                    align-self: flex-start;
+                                    margin: 1em .5em;
+        
+                                    span {
+                                        font: {
+                                            family: $f-body-thin;
+                                            size: 0.8em;
+                                        }
+                                        color: $c-dark-blue;
+                                    }
+                                }
+                            }
+    
+                            .txt {
+                                display: flex;
+                                margin: auto;
+                                max-width: 85%;
+                                margin-bottom: 1em;
                             }
                         }
+
                     }
             }
 
             &--numbers {
                 display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
+                flex: {
+                    direction: row;
+                    wrap: nowrap;
+                }
                 justify-content: center;
-                width: 85%;
+                width: 80%;
                 margin: auto;
 
                     .number {
-                        width: 20%;
-                        height: 5em;
+                        width: 10%;
+                        height: 1em;
+                        cursor: pointer;
                         background-color: transparent;
                         border-radius: 20px;
-                        border: solid 0.5em $c-brick;
-                        margin: 0 2em;
-                        height: 1em;
-                    }
+                        border: solid 0.2em $c-brick;
+                        margin: 0 .5em;
+                        transition: all 0.5s;
+                        box-shadow: 0px 0px 10px $c-shadow;
 
-                    .current {
-                        background-color: $c-brick;
+                        &.active {
+                            background-color: $c-brick;
+                        }
                     }
             }
         }

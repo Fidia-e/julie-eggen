@@ -38,7 +38,7 @@ Template Name: Seances
             <a class="link link-instagram link-dark-header" href="javascript:void(0)">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a class="link link-facebook link-dark-header" href="javascript:void(0)">
+            <a class="link link-facebook link-dark-header" href="https://www.facebook.com/juliepsy11">
                 <i class="fab fa-facebook-f"></i>
             </a>
         </div>
@@ -78,7 +78,7 @@ Template Name: Seances
             <a class="link link-dark-footer link-phone" href="javascript:void(0)"><i class="fas fa-phone-alt"></i></a>
             <a class="link link-dark-footer link-email" href="javascript:void(0)"><i class="far fa-envelope"></i></a>
             <a class="link link-dark-footer link-instagram" href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
-            <a class="link link-dark-footer link-facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+            <a class="link link-dark-footer link-facebook" href="https://www.facebook.com/juliepsy11"><i class="fab fa-facebook-f"></i></a>
         </div>
         <p class="copyright copyright-dark-footer">&copy;&nbsp;2021&nbsp;Julie&nbsp;Eggen</p>
     </footer>
