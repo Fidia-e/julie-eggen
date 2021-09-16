@@ -11,7 +11,7 @@ Template Name: Analyse transactionnelle
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../wp-content/themes/julie-eggen/assets/images/favicon.ico"/>
-    <script src="../../wp-content/themes/julie-eggen/assets/js/main.js"></script>
+    <script src="../wp-content/themes/julie-eggen/assets/js/main.js"></script>
     <title>Julie Eggenspieler</title>
     <?php wp_head(); ?>
 </head>
@@ -19,7 +19,7 @@ Template Name: Analyse transactionnelle
     <header class="header header-dark">
         <div class="header__logo">
             <a class="header__logo--logo" href="<?= home_url( '/accueil' ); ?>">
-                <img src="../../wp-content/themes/julie-eggen/assets/images/logo-light.png" alt="logo__text"/>
+                <img src="../wp-content/themes/julie-eggen/assets/images/logo-light.png" alt="logo__text"/>
                 <h1 class="title-dark-header">Julie Eggenspieler</h1>
             </a>
         </div>
@@ -58,7 +58,7 @@ Template Name: Analyse transactionnelle
     <main class="main-at">
         <div class="main-at__elements">
             <h2>Qu'est-ce que l'analyse transactionnelle ?</h2>
-            <img src="../../wp-content/themes/julie-eggen/assets/images/AT.svg" alt="at-img">
+            <img src="../wp-content/themes/julie-eggen/assets/images/AT.svg" alt="at-img">
             <p>
             Je crisse mon camp d'icite anyway, je déguedine au plus sacrant, ça sent la cibole de marde. Arrête de faire la baboune tabaslack, a va fondre la slutch. J'ai ben d'la misère avec les colons en bedaine. Je m'en crisse, mais câlicement. Les crottes de fromage, bien sqouick sqouick dans yeule, c'est ça le bonheur. Des patates pilées, du steak haché, du maïs en crème, pis kin toé, du pâté chinois.
             </p>
