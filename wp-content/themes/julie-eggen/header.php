@@ -29,10 +29,10 @@
                 <span class="span span-email" >julie.eggen@gmail.com</span>
                 <i class="fas fa-comment-alt email-comment comment"></i>
             </a>
-            <a class="link link-instagram link-light-header" href="javascript:void(0)">
+            <a class="link link-instagram link-light-header" target="_blank" href="javascript:void(0)">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a class="link link-facebook link-light-header" href="https://www.facebook.com/juliepsy11">
+            <a class="link link-facebook link-light-header" target="_blank" href="https://www.facebook.com/juliepsy11">
                 <i class="fab fa-facebook-f"></i>
             </a>
         </div>
