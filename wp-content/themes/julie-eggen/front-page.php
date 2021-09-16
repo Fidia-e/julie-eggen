@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/favicon.ico"/>
-    <script src="../assets/js/main.js"></script>
+    <script src="../wp-content/themes/julie-eggen/assets/js/main.js"></script>
     <title>Julie Eggenspieler</title>
     <?php wp_head(); ?>
 </head>
@@ -21,14 +21,14 @@
                 <div class="cercle" id="cercle3"></div>
             </div>
             <div class="container__hero--picture">
-                <img src="./assets/images/welcome-pic.jpg" alt="">
+                <img src="../wp-content/themes/julie-eggen/assets/images/welcome-pic.jpg" alt="">
             </div>
             <div class="container__hero--subtitle">
                 <h2>Psychothérapie <br><br> Analyse transactionnelle </h2>
             </div>
         </div>
         <div class="container__gif">
-            <img src="./assets/images/welcome-gif.gif" alt="signature-gif">
+            <img src="../wp-content/themes/julie-eggen/assets/images/welcome-gif.gif" alt="signature-gif">
         </div>
         <div class="container__button">
             <a class="container__button--button" href="<?= home_url( '/accueil' ); ?>">
