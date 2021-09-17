@@ -45,7 +45,7 @@ Template Name: Blog
             get_template_part('template-parts/header-menu');
         ?>
     </header>
-    
+
     <main class="main-blog">
         <section class="excerpt-list">
             <article class="single-excerpt">
@@ -168,7 +168,7 @@ Template Name: Blog
             <article class="single-excerpt">
                 <a class="single-excerpt__link" href="javascript:void(0)">
                     <div class="single-excerpt__link--elements" style="background-image: url('https://images.unsplash.com/photo-1614069565320-172174347232?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60')">
-                        <h3 class="single-excerpt__link--elements--title">Intuition: quand nos intestions nous parlent</h3>
+                        <h3 class="single-excerpt__link--elements--title">Intuition: quand nos intestins nous parlent</h3>
                         <p class="single-excerpt__link--elements--text">Ferme-toé un peu le mâche-patate là, va prendre une marche ou quelque chose. Mon char est resté pogné dans crisse de slotche toute la nuite. Toryeu que c'est cheap cette esti de cochonnerie-là !</p>
                         <a class="single-excerpt__link--elements--more" href="javascript:void(0)">Lire l'article &nbsp;<i class="fas fa-angle-double-right"></i></a>
                     </div>

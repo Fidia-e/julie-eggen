@@ -82,6 +82,7 @@
                         color: $c-dark-blue;
                         font-weight: bold;
                         font-size: 1.5em;
+                        line-height: 1.8em;
                     }
         
                     .subtitle {
@@ -204,7 +205,560 @@
             z-index: 2;
 
             &--title {
-                width: 100%;
+                background-color: $c-brick;
+                padding-top: 1em;
+
+                h1 {
+                    font: {
+                        family: $f-landing-page;
+                        weight: bold;
+                        size: 1.5em;
+                    }
+                    text-transform: uppercase;
+                    color: $c-black;
+                    text-align: center;
+                }
+
+                .subtitle {
+                    color: $c-white;
+                    font: {
+                        family: $f-body;
+                        size: 1.2em;
+                    }
+                    margin: 1em 0;
+                    text-align: center;
+                }
+            }
+
+            &--content {
+                width: 100vw;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                overflow: hidden;
+                scroll-behavior: smooth;
+
+                    .carousel--item {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        flex-shrink: 0;
+                        border: none;
+                        background: none;
+
+                        .testimonial {
+                            width: 90%;
+                            background-color: $c-white;
+                            border-radius: 20px;
+                            color: $c-black-lighten;
+                            line-height: 1.3rem;
+                            margin: 1em auto;
+                            box-shadow: 0px 0px 10px $c-shadow;
+
+
+                            &--author {
+                                width: 90%;
+                                display: flex;
+    
+                                h4 {
+                                    font-family: $f-body-medium;
+                                    color: $c-ocre-yellow;
+                                    font-size: 1.2em;
+                                    align-self: flex-start;
+                                    margin: 1em;
+        
+                                    span {
+                                        font: {
+                                            family: $f-body-thin;
+                                            size: 0.8em;
+                                        }
+                                        color: $c-dark-blue;
+                                    }
+                                }
+                            }
+    
+                            .txt {
+                                display: flex;
+                                margin: auto;
+                                width: 85%;
+                                margin-bottom: 1em;
+                                font-size: 1rem;
+                            }
+                        }
+
+                    }
+            }
+
+            &--numbers {
+                width: 60%;
+                display: flex;
+                flex: {
+                    direction: row;
+                    wrap: nowrap;
+                }
+                justify-content: center;
+                margin: auto;
+
+                    .number {
+                        width: 10%;
+                        height: 1em;
+                        cursor: pointer;
+                        background-color: transparent;
+                        border-radius: 20px;
+                        border: solid 0.2em $c-brick;
+                        margin: 0 .5em;
+                        transition: all 0.5s;
+
+                        &.active {
+                            background-color: $c-brick;
+                        }
+                    }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Tablette ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+
+@include medium {
+    .main {
+        margin-top: 6em;
+     
+        &__presentation {
+    
+        /*---------------------------------------- PROFIL -----------------------------------------------*/
+
+            &--profil {
+
+                &--picture {
+        
+                    img {
+                        border: solid 1.2em $c-white;
+                        border-bottom: solid 3em $c-white;
+                    }
+                }
+        
+                &--description {
+                    font-size: 1.5em;
+                    line-height: 1.8rem;
+        
+                    h1 {
+                        font-size: 2em;
+                        margin-top: 1em;
+                    }
+        
+                    .subtitle {
+                        font-size: 1.5em;
+                        line-height: 1.8rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        /*---------------------------------------- SERVICES -----------------------------------------------*/
+
+        &__services {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+                line-height: 1.9rem;
+            }
+        }
+
+        /*------------------------------------- CONSULTATIONS -------------------------------------------*/
+
+        &__consultations {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+
+         /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
+
+        &__testimonials {
+
+            &--title {
+
+                h1 {
+                    font-size: 2em;
+                }
+
+                .subtitle {
+                    font-size: 1.5em;
+                }
+            }
+
+            &--content {
+
+                    .carousel--item {
+                        display: flex;
+                        flex: {
+                            direction: column;
+                            shrink: 0;
+                        }
+                        font-size: 1.5em;
+                        width: 100%;
+                        line-height: 1.8rem;
+                        margin: 1em 0rem;
+
+                        .testimonial {
+                            width: 95%;
+                            background-color: $c-white;
+                            border-radius: 20px;
+                            color: $c-black-lighten;
+                            line-height: 1.3rem;
+                            margin: 1em auto;
+                            box-shadow: 0px 0px 10px $c-shadow;
+                        }
+
+                        .testimonial--author {
+
+                            h4 {
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+            }
+
+            &--numbers {
+
+                .number {
+
+                    width: 10%;
+                    margin: 0 1em;
+                }
+            }
+        }
+    }
+}
+
+@include large {
+    .main {
+        margin-top: 8em;
+     
+        &__presentation {
+    
+        /*---------------------------------------- PROFIL -----------------------------------------------*/
+
+            &--profil {
+
+                &--picture {
+        
+                    img {
+                        border: solid 1.2em $c-white;
+                        border-bottom: solid 3em $c-white;
+                    }
+                }
+        
+                &--description {
+                    font-size: 1.5em;
+                    line-height: 1.8rem;
+        
+                    h1 {
+                        font-size: 3em;
+                        margin-top: 1em;
+                    }
+        
+                    .subtitle {
+                        font-size: 1.5em;
+                        line-height: 1.8rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        /*---------------------------------------- SERVICES -----------------------------------------------*/
+
+        &__services {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+                line-height: 1.9rem;
+            }
+        }
+
+        /*------------------------------------- CONSULTATIONS -------------------------------------------*/
+
+        &__consultations {
+            font-size: 1.5em;
+            line-height: 1.8rem;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+        }
+
+         /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
+
+        &__testimonials {
+
+            &--title {
+
+                h1 {
+                    font-size: 3em;
+                }
+
+                .subtitle {
+                    font-size: 1.8em;
+                }
+            }
+
+            &--content {
+
+                    .carousel--item {
+                        display: flex;
+                        flex: {
+                            direction: column;
+                            shrink: 0;
+                        }
+                        font-size: 1.5em;
+                        width: 100%;
+                        line-height: 1.8rem;
+                        margin: 1em 0rem;
+                        
+                        .testimonial {
+                            width: 95%;
+                            background-color: $c-white;
+                            border-radius: 20px;
+                            color: $c-black-lighten;
+                            line-height: 1.3rem;
+                            margin: 1em auto;
+                            box-shadow: 0px 0px 10px $c-shadow;
+                        }
+
+                        .testimonial--author {
+
+                            h4 {
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+            }
+
+            &--numbers {
+
+                .number {
+
+                    width: 10%;
+                    margin: 0 1em;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Desktop ----------------------------------------------------
+ ----------------------------------------------------------------------------------------------------------*/
+@include extra-large {
+
+    .main {
+        grid-row-start: 2;
+        background: url("../../assets/images/fond-home.svg");
+        background-size: cover;
+        margin-top: 4em;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        ::selection {
+            background-color: $c-orange-yellow;
+            color: $c-white;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $c-white;
+            opacity: 0.5;
+            z-index: 0;
+        }
+
+        
+          &__presentation {
+            width: 95%;
+            display: flex;
+            flex-direction: raw;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 6em auto;
+            z-index: 2;
+    
+        /*---------------------------------------- PROFIL -----------------------------------------------*/
+        
+            &--profil {
+                display: flex;
+                flex-direction: raw;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: center;
+                width: 70%;
+                background-color: $c-white;
+                border-radius: 20px;
+                padding: 3rem;
+        
+                &--picture {
+                    width: 35%;
+        
+                    img {
+                        width: 80%;
+                        margin-left: 2em;
+                        border: solid 1em $c-white;
+                        border-bottom: solid 4em $c-white;
+                        box-shadow: 15px 15px 100px lighten($c-shadow, 30%);
+                        transform: rotate(5deg);
+                    }
+                }
+        
+                &--description {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    align-self: center;
+                    font-family: $f-body;
+                    color: $c-black-lighten;
+                    text-align: justify;
+                    font-size: 1.2em;
+                    line-height: 1.5rem;
+        
+                    h1 {
+                        text-transform: uppercase;
+                        font-family: $f-landing-page;
+                        color: $c-dark-blue;
+                        font-weight: bold;
+                        font-size: 2.5em;
+    
+                    }
+        
+                    .subtitle {
+                        color: $c-dark-yellow;
+                        font-family: $f-body-thin;
+                        font-size: 1em;
+                        margin-top: 1em;
+                        margin-bottom: 2rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }  
+
+        /*---------------------------------------- SERVICES -----------------------------------------------*/
+
+        &__services {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            background-color: $c-white;
+            border-radius: 20px;
+            padding: 4em;
+            font-family: $f-body;
+            color: $c-black-lighten;
+            font-size: 1.2em;
+            line-height: 1.5rem;
+            margin: 10em auto;
+            text-align: justify;
+            z-index: 2;
+
+            h1 {
+                text-transform: uppercase;
+                font-family: $f-landing-page;
+                color: $c-dark-blue;
+                font-weight: bold;
+                font-size: 2.5em;
+                text-align: center;
+            }
+
+            .subtitle {
+                color: $c-dark-yellow;
+                font-family: $f-body;
+                font-size: 1.5em;
+                margin: 2em 0;
+                text-align: center;
+            }
+        }
+
+        /*------------------------------------- CONSULTATIONS -------------------------------------------*/
+
+        &__consultations {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            background-color: $c-dark-yellow;
+            border-radius: 20px;
+            padding: 4em;
+            font-family: $f-body;
+            color: $c-white;
+            font-size: 1.2em;
+            line-height: 1.5rem;
+            margin: 6em auto;
+            text-align: justify;
+            z-index: 2;
+
+            h1 {
+                text-transform: uppercase;
+                font-family: $f-landing-page;
+                color: $c-white;
+                font-size: 2.5em;
+                text-align: center;
+            }
+
+            .subtitle {
+                color: $c-dark-blue;
+                font-family: $f-body;
+                font-size: 1.5em;
+                margin: 2em 0;
+                text-align: center;
+            }
+
+            img {
+                width: 40%;
+                margin: auto;
+                margin-top: 2em;
+            }
+        }
+
+         /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
+
+         &__testimonials {
+            display: flex;
+            flex-direction: column;
+            margin: 0em auto 2em auto;
+            padding-bottom: 1em;
+            text-align: justify;
+            z-index: 2;
+
+            &--title {
                 background-color: $c-brick;
                 padding: 1em 0em 0em 0em;
 
@@ -234,7 +788,6 @@
 
 
             &--content {
-                width: 100%;
                 display: flex;
                 flex: {
                     direction: row;
@@ -242,7 +795,7 @@
                 }
                 overflow: hidden;
                 scroll-behavior: smooth;
-                // margin: auto;
+                margin: auto;
 
                     .carousel--item {
                         display: flex;
@@ -256,17 +809,16 @@
                         }
                         width: 100%;
                         border: none;
-                        background: none;
+                        background: transparent;
 
                         .testimonial {
-                            width: 90%;
+                            width: 75%;
                             background-color: $c-white;
                             border-radius: 20px;
                             color: $c-black-lighten;
                             line-height: 1.3rem;
                             margin: 1em auto;
                             box-shadow: 0px 0px 10px $c-shadow;
-
 
                             &--author {
                                 width: 90%;
@@ -302,13 +854,13 @@
             }
 
             &--numbers {
-                width: 80%;
                 display: flex;
                 flex: {
                     direction: row;
                     wrap: nowrap;
                 }
                 justify-content: center;
+                width: 80%;
                 margin: auto;
 
                     .number {
@@ -320,6 +872,7 @@
                         border: solid 0.2em $c-brick;
                         margin: 0 .5em;
                         transition: all 0.5s;
+                        box-shadow: 0px 0px 10px $c-shadow;
 
                         &.active {
                             background-color: $c-brick;
@@ -328,569 +881,4 @@
             }
         }
     }
-}
-
-/*----------------------------------------------------------------------------------------------------------
- ---------------------------------------------- Tablette ----------------------------------------------------
- ----------------------------------------------------------------------------------------------------------*/
-
-// @include medium {
-//     .main {
-//         margin-top: 6em;
-     
-//         &__presentation {
-    
-//         /*---------------------------------------- PROFIL -----------------------------------------------*/
-
-//             &--profil {
-
-//                 &--picture {
-        
-//                     img {
-//                         border: solid 1.2em $c-white;
-//                         border-bottom: solid 3em $c-white;
-//                     }
-//                 }
-        
-//                 &--description {
-//                     font-size: 1.5em;
-//                     line-height: 1.8rem;
-        
-//                     h1 {
-//                         font-size: 2em;
-//                         margin-top: 1em;
-//                     }
-        
-//                     .subtitle {
-//                         font-size: 1.5em;
-//                         line-height: 1.8rem;
-//                         font-weight: bold;
-//                     }
-//                 }
-//             }
-//         }
-
-//         /*---------------------------------------- SERVICES -----------------------------------------------*/
-
-//         &__services {
-//             font-size: 1.5em;
-//             line-height: 1.8rem;
-
-//             h1 {
-//                 font-size: 2em;
-//             }
-
-//             .subtitle {
-//                 font-size: 1.5em;
-//                 line-height: 1.9rem;
-//             }
-//         }
-
-//         /*------------------------------------- CONSULTATIONS -------------------------------------------*/
-
-//         &__consultations {
-//             font-size: 1.5em;
-//             line-height: 1.8rem;
-
-//             h1 {
-//                 font-size: 2em;
-//             }
-
-//             .subtitle {
-//                 font-size: 1.5em;
-//             }
-//         }
-
-//          /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
-
-//         &__testimonials {
-
-//             &--title {
-
-//                 h1 {
-//                     font-size: 2em;
-//                 }
-
-//                 .subtitle {
-//                     font-size: 1.5em;
-//                 }
-//             }
-
-//             &--content {
-
-//                     .carousel--item {
-//                         display: flex;
-//                         flex: {
-//                             direction: column;
-//                             shrink: 0;
-//                         }
-//                         font-size: 1.5em;
-//                         width: 100%;
-//                         line-height: 1.8rem;
-//                         margin: 1em 0rem;
-
-//                         .testimonial {
-//                             width: 95%;
-//                             background-color: $c-white;
-//                             border-radius: 20px;
-//                             color: $c-black-lighten;
-//                             line-height: 1.3rem;
-//                             margin: 1em auto;
-//                             box-shadow: 0px 0px 10px $c-shadow;
-//                         }
-
-//                         .testimonial--author {
-
-//                             h4 {
-//                                 font-size: 1.5em;
-//                             }
-//                         }
-//                     }
-//             }
-
-//             &--numbers {
-
-//                 .number {
-
-//                     width: 10%;
-//                     margin: 0 1em;
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// @include large {
-//     .main {
-//         margin-top: 8em;
-     
-//         &__presentation {
-    
-//         /*---------------------------------------- PROFIL -----------------------------------------------*/
-
-//             &--profil {
-
-//                 &--picture {
-        
-//                     img {
-//                         border: solid 1.2em $c-white;
-//                         border-bottom: solid 3em $c-white;
-//                     }
-//                 }
-        
-//                 &--description {
-//                     font-size: 1.5em;
-//                     line-height: 1.8rem;
-        
-//                     h1 {
-//                         font-size: 3em;
-//                         margin-top: 1em;
-//                     }
-        
-//                     .subtitle {
-//                         font-size: 1.5em;
-//                         line-height: 1.8rem;
-//                         font-weight: bold;
-//                     }
-//                 }
-//             }
-//         }
-
-//         /*---------------------------------------- SERVICES -----------------------------------------------*/
-
-//         &__services {
-//             font-size: 1.5em;
-//             line-height: 1.8rem;
-
-//             h1 {
-//                 font-size: 2em;
-//             }
-
-//             .subtitle {
-//                 font-size: 1.5em;
-//                 line-height: 1.9rem;
-//             }
-//         }
-
-//         /*------------------------------------- CONSULTATIONS -------------------------------------------*/
-
-//         &__consultations {
-//             font-size: 1.5em;
-//             line-height: 1.8rem;
-
-//             h1 {
-//                 font-size: 2em;
-//             }
-
-//             .subtitle {
-//                 font-size: 1.5em;
-//             }
-//         }
-
-//          /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
-
-//         &__testimonials {
-
-//             &--title {
-
-//                 h1 {
-//                     font-size: 3em;
-//                 }
-
-//                 .subtitle {
-//                     font-size: 1.8em;
-//                 }
-//             }
-
-//             &--content {
-
-//                     .carousel--item {
-//                         display: flex;
-//                         flex: {
-//                             direction: column;
-//                             shrink: 0;
-//                         }
-//                         font-size: 1.5em;
-//                         width: 100%;
-//                         line-height: 1.8rem;
-//                         margin: 1em 0rem;
-                        
-//                         .testimonial {
-//                             width: 95%;
-//                             background-color: $c-white;
-//                             border-radius: 20px;
-//                             color: $c-black-lighten;
-//                             line-height: 1.3rem;
-//                             margin: 1em auto;
-//                             box-shadow: 0px 0px 10px $c-shadow;
-//                         }
-
-//                         .testimonial--author {
-
-//                             h4 {
-//                                 font-size: 1.5em;
-//                             }
-//                         }
-//                     }
-//             }
-
-//             &--numbers {
-
-//                 .number {
-
-//                     width: 10%;
-//                     margin: 0 1em;
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// /*----------------------------------------------------------------------------------------------------------
-//  ---------------------------------------------- Desktop ----------------------------------------------------
-//  ----------------------------------------------------------------------------------------------------------*/
-// @include extra-large {
-
-//     .main {
-//         grid-row-start: 2;
-//         background: url("../../assets/images/fond-home.svg");
-//         background-size: cover;
-//         margin-top: 4em;
-//         width: 100%;
-//         display: flex;
-//         flex-wrap: wrap;
-//         position: relative;
-//         ::selection {
-//             background-color: $c-orange-yellow;
-//             color: $c-white;
-//         }
-
-//         &::after {
-//             content: '';
-//             position: absolute;
-//             top: 0;
-//             right: 0;
-//             bottom: 0;
-//             left: 0;
-//             background-color: $c-white;
-//             opacity: 0.5;
-//             z-index: 0;
-//         }
-
-        
-//           &__presentation {
-//             width: 95%;
-//             display: flex;
-//             flex-direction: raw;
-//             flex-wrap: wrap;
-//             justify-content: space-between;
-//             margin: 6em auto;
-//             z-index: 2;
-    
-//         /*---------------------------------------- PROFIL -----------------------------------------------*/
-        
-//             &--profil {
-//                 display: flex;
-//                 flex-direction: raw;
-//                 flex-wrap: wrap;
-//                 justify-content: space-around;
-//                 align-content: center;
-//                 width: 70%;
-//                 background-color: $c-white;
-//                 border-radius: 20px;
-//                 padding: 3rem;
-        
-//                 &--picture {
-//                     width: 35%;
-        
-//                     img {
-//                         width: 80%;
-//                         margin-left: 2em;
-//                         border: solid 1em $c-white;
-//                         border-bottom: solid 4em $c-white;
-//                         box-shadow: 15px 15px 100px lighten($c-shadow, 30%);
-//                         transform: rotate(5deg);
-//                     }
-//                 }
-        
-//                 &--description {
-//                     display: flex;
-//                     flex-direction: column;
-//                     width: 50%;
-//                     align-self: center;
-//                     font-family: $f-body;
-//                     color: $c-black-lighten;
-//                     text-align: justify;
-//                     font-size: 1.2em;
-//                     line-height: 1.5rem;
-        
-//                     h1 {
-//                         text-transform: uppercase;
-//                         font-family: $f-landing-page;
-//                         color: $c-dark-blue;
-//                         font-weight: bold;
-//                         font-size: 2.5em;
-    
-//                     }
-        
-//                     .subtitle {
-//                         color: $c-dark-yellow;
-//                         font-family: $f-body-thin;
-//                         font-size: 1em;
-//                         margin-top: 1em;
-//                         margin-bottom: 2rem;
-//                         font-weight: bold;
-//                     }
-//                 }
-//             }
-//         }  
-
-//         /*---------------------------------------- SERVICES -----------------------------------------------*/
-
-//         &__services {
-//             display: flex;
-//             flex-direction: column;
-//             width: 85%;
-//             background-color: $c-white;
-//             border-radius: 20px;
-//             padding: 4em;
-//             font-family: $f-body;
-//             color: $c-black-lighten;
-//             font-size: 1.2em;
-//             line-height: 1.5rem;
-//             margin: 10em auto;
-//             text-align: justify;
-//             z-index: 2;
-
-//             h1 {
-//                 text-transform: uppercase;
-//                 font-family: $f-landing-page;
-//                 color: $c-dark-blue;
-//                 font-weight: bold;
-//                 font-size: 2.5em;
-//                 text-align: center;
-//             }
-
-//             .subtitle {
-//                 color: $c-dark-yellow;
-//                 font-family: $f-body;
-//                 font-size: 1.5em;
-//                 margin: 2em 0;
-//                 text-align: center;
-//             }
-//         }
-
-//         /*------------------------------------- CONSULTATIONS -------------------------------------------*/
-
-//         &__consultations {
-//             display: flex;
-//             flex-direction: column;
-//             width: 85%;
-//             background-color: $c-dark-yellow;
-//             border-radius: 20px;
-//             padding: 4em;
-//             font-family: $f-body;
-//             color: $c-white;
-//             font-size: 1.2em;
-//             line-height: 1.5rem;
-//             margin: 6em auto;
-//             text-align: justify;
-//             z-index: 2;
-
-//             h1 {
-//                 text-transform: uppercase;
-//                 font-family: $f-landing-page;
-//                 color: $c-white;
-//                 font-size: 2.5em;
-//                 text-align: center;
-//             }
-
-//             .subtitle {
-//                 color: $c-dark-blue;
-//                 font-family: $f-body;
-//                 font-size: 1.5em;
-//                 margin: 2em 0;
-//                 text-align: center;
-//             }
-
-//             img {
-//                 width: 40%;
-//                 margin: auto;
-//                 margin-top: 2em;
-//             }
-//         }
-
-//          /*-------------------------------------- TEMOIGNAGES -------------------------------------------*/
-
-//          &__testimonials {
-//             display: flex;
-//             flex-direction: column;
-//             margin: 0em auto 2em auto;
-//             padding-bottom: 1em;
-//             text-align: justify;
-//             z-index: 2;
-
-//             &--title {
-//                 background-color: $c-brick;
-//                 padding: 1em 0em 0em 0em;
-
-
-//                 h1 {
-//                     font: {
-//                         family: $f-landing-page;
-//                         weight: bold;
-//                         size: 1.5em;
-//                     }
-//                     text-transform: uppercase;
-//                     color: $c-black;
-//                     text-align: center;
-//                 }
-
-//                 .subtitle {
-//                     color: $c-white;
-//                     font: {
-//                         family: $f-body;
-//                         size: 1.2em;
-//                     }
-//                     margin: 1em 0;
-//                     text-align: center;
-//                 }
-//             }
-
-
-
-//             &--content {
-//                 display: flex;
-//                 flex: {
-//                     direction: row;
-//                     wrap: nowrap;
-//                 }
-//                 overflow: hidden;
-//                 scroll-behavior: smooth;
-//                 margin: auto;
-
-//                     .carousel--item {
-//                         display: flex;
-//                         flex: {
-//                             direction: column;
-//                             shrink: 0;
-//                         }
-//                         font: {
-//                             family: $f-body;
-//                             size: 1em;
-//                         }
-//                         width: 100%;
-//                         border: none;
-//                         background: transparent;
-
-//                         .testimonial {
-//                             width: 75%;
-//                             background-color: $c-white;
-//                             border-radius: 20px;
-//                             color: $c-black-lighten;
-//                             line-height: 1.3rem;
-//                             margin: 1em auto;
-//                             box-shadow: 0px 0px 10px $c-shadow;
-
-//                             &--author {
-//                                 width: 90%;
-//                                 display: flex;
-//                                 margin: auto;
-    
-//                                 h4 {
-//                                     font-family: $f-body-medium;
-//                                     color: $c-ocre-yellow;
-//                                     font-size: 1em;
-//                                     align-self: flex-start;
-//                                     margin: 1em .5em;
-        
-//                                     span {
-//                                         font: {
-//                                             family: $f-body-thin;
-//                                             size: 0.8em;
-//                                         }
-//                                         color: $c-dark-blue;
-//                                     }
-//                                 }
-//                             }
-    
-//                             .txt {
-//                                 display: flex;
-//                                 margin: auto;
-//                                 max-width: 85%;
-//                                 margin-bottom: 1em;
-//                             }
-//                         }
-
-//                     }
-//             }
-
-//             &--numbers {
-//                 display: flex;
-//                 flex: {
-//                     direction: row;
-//                     wrap: nowrap;
-//                 }
-//                 justify-content: center;
-//                 width: 80%;
-//                 margin: auto;
-
-//                     .number {
-//                         width: 10%;
-//                         height: 1em;
-//                         cursor: pointer;
-//                         background-color: transparent;
-//                         border-radius: 20px;
-//                         border: solid 0.2em $c-brick;
-//                         margin: 0 .5em;
-//                         transition: all 0.5s;
-//                         box-shadow: 0px 0px 10px $c-shadow;
-
-//                         &.active {
-//                             background-color: $c-brick;
-//                         }
-//                     }
-//             }
-//         }
-//     }
-// } 
+} 
