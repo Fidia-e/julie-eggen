@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../../wp-content/themes/julie-eggen/assets/images/favicon.ico"/>
-    <script src="../../wp-content/themes/julie-eggen/assets/js/main.js"></script>
+    <link rel="shortcut icon" href="../wp-content/themes/julie-eggen/assets/images/favicon.ico"/>
+    <script src="../wp-content/themes/julie-eggen/assets/js/main.js"></script>
     <title>Julie Eggenspieler</title>
     <?php wp_head(); ?>
 </head>
@@ -13,7 +13,7 @@
     <header class="header header-light">
         <div class="header__logo">
             <a class="header__logo--logo" href="<?= home_url( '/accueil' ); ?>">
-                <img src="../../wp-content/themes/julie-eggen/assets/images/logo-dark.png" alt="logo__text"/>
+                <img src="../wp-content/themes/julie-eggen/assets/images/logo-dark.png" alt="logo__text"/>
                 <h1 class="title-light-header">Julie Eggenspieler</h1>
             </a>
         </div>
