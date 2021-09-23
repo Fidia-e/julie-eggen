@@ -7,7 +7,7 @@
 	.main-blog {
 		grid-row-start: 2;
 		margin: 2.5rem auto 0rem auto;
-		width: 100%;
+		width: 100vw;
 		display: flex;
 		flex-wrap: wrap;
 		position: relative;
@@ -139,6 +139,7 @@
 @include medium {
 
 	.main-blog {
+		width: 100vw;
 		margin-top: 6rem;
 
 		.excerpt-list {
@@ -180,6 +181,7 @@
 @include large {
     
 	.main-blog {
+		width: 100vw;
 		margin-top: 8rem;
 
 		.excerpt-list {
@@ -226,6 +228,7 @@
 @include extra-large {
 
 	.main-blog {
+		width: 100vw;
 		grid-row-start: 2;
 		margin: 4.5em auto 0em auto;
 		width: 100%;

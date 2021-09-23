@@ -5,6 +5,7 @@
 @include small {
     
     .main-consultations {
+        width: 100vw;
         grid-row-start: 2;
         margin-bottom: 4em;
         display: flex;
@@ -18,7 +19,7 @@
         &__text {
             font-size: 1em;
             color: $c-black-lighten;
-            width: 60%;
+            width: 55%;
             margin: 0em 2em;
             text-align: center;
             display: flex;
@@ -71,36 +72,39 @@
         .main-consultations__text--contact::before {
             content: "";
             background-image: url(../../assets/images/etape-1.png);
-            background-size: 120px 120px;
-            width: 120px; 
-            height: 120px;
+            background-size: 90px 90px;
+            background-repeat: no-repeat;
+            width: 90px; 
+            height: 90px;
             display: inline-block;
             position: relative;
-            right: 11rem; 
+            right: 9rem; 
             top: 12em;
         }
 
         .main-consultations__text--agenda::after {
             content: "";
             background-image: url(../../assets/images/etape-2.png);
-            background-size: 120px 120px;
-            width: 120px; 
-            height: 120px;
+            background-size: 90px 90px;
+            background-repeat: no-repeat;
+            width: 90px; 
+            height: 90px;
             display: inline-block;
             position: relative;
-            left: 11rem; 
+            left: 9rem; 
             top: -12em;
         }
 
         .main-consultations__text--consult::before {
             content: "";
             background-image: url(../../assets/images/etape-3.png);
-            background-size: 150px 150px;
-            width: 150px; 
-            height: 150px;
+            background-size: 90px 90px;
+            background-repeat: no-repeat;
+            width: 90px; 
+            height: 90px;
             display: inline-block;
             position: relative;
-            right: 10rem; 
+            right: 9rem; 
             top: 12em;
         }
 
@@ -109,11 +113,11 @@
         }
 
         .main-consultations__text--agenda {
-            margin: 8em 0em 0em 2em;
+            margin: 4em 0em 0em 2em;
         }
 
         .main-consultations__text--consult {
-            margin-top: -10em;
+            margin-top: -8em;
         }
     }
 }
@@ -163,9 +167,9 @@
         .main-consultations__text--consult::before {
             content: "";
             background-image: url(../../assets/images/etape-3.png);
-            background-size: 250px 250px;
-            width: 250px; 
-            height: 250px;
+            background-size: 200px 200px;
+            width: 200px; 
+            height: 200px;
             display: inline-block;
             position: relative;
             right: 22rem; 
@@ -228,9 +232,9 @@
         .main-consultations__text--consult::before {
             content: "";
             background-image: url(../../assets/images/etape-3.png);
-            background-size: 350px 350px;
-            width: 350px; 
-            height: 350px;
+            background-size: 300px 300px;
+            width: 300px; 
+            height: 300px;
             display: inline-block;
             position: relative;
             right: 30rem; 
